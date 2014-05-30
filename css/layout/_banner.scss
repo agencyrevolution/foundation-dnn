@@ -1,0 +1,28 @@
+.top-bar {
+  a {
+    transition-duration: 0.2s;
+  }
+  .title-area img {
+    height: 50px;
+  }
+}
+
+.showControlBar {
+  body { margin-top: 53px; }
+  .fixed, .blur { top: 53px; }
+  #canvas { margin-top: -53px; }
+}
+
+.feature-wrap {
+  background-color: $primary-color;
+  padding: rem-calc(76) 0;
+  h1, h3 {
+    color: white;
+  }
+}
+
+.orbit-caption {
+  h1, h2, h3, h4, h5, h6 {
+    color: $orbit-caption-font-color;
+  }
+}

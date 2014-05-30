@@ -1,0 +1,46 @@
+.dnnEditState .DnnModule { opacity: 1 !important; }
+.DNNEmptyPane { display: none !important; }
+.dnnSortable { &.ui-sortable, &.ui-droppable { padding: inherit; } }
+.aside { .ModRevMoonRayFormC, .dnnFormAndList { background-color: white; } }
+
+html, body { overflow-x: hidden; }
+
+.half-rule { width: 100px; margin: 40px auto; }
+
+.primary-color   { background-color: $primary-color; }
+.secondary-color { background-color: $secondary-color; }
+.success-color   { background-color: $success-color; }
+.alert-color     { background-color: $alert-color; }
+
+[role="main"] {
+  .content {
+    @extend .medium-8;
+    @extend .columns;
+    min-height: 25em;
+  }
+
+  .aside {
+    @extend .medium-4;
+    @extend .columns;
+    @extend .right;
+
+    &.DNNEmptyPane + .content {
+      @extend .medium-12;
+      border-right: none;
+    }
+
+  }
+
+}
+
+.page-template-wide .row {
+  width: 100%;
+}
+
+@media #{$medium-up} {
+  [role="main"] {
+    .aside {
+      padding-left: 20px;
+    }
+  }
+}
