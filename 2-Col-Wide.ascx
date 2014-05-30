@@ -1,0 +1,19 @@
+<%@ Control language="c#" AutoEventWireup="true" Explicit="True" Inherits="DotNetNuke.UI.Skins.Skin" %>
+<%@ Register TagPrefix="dnn" Namespace="DotNetNuke.Web.Client.ClientResourceManagement" Assembly="DotNetNuke.Web.Client" %>
+<%@ Register TagPrefix="avt" TagName="MyTokens" Src="~/DesktopModules/avt.MyTokens/SkinObjectReplacer.ascx" %>
+<%@ Register TagPrefix="ar" TagName="Banner" Src="inc/banner.ascx" %>
+<%@ Register TagPrefix="ar" TagName="ContentInfo" Src="inc/contentinfo.ascx" %>
+<%@ Register TagPrefix="ar" TagName="Catch" src="inc/catch.ascx" %>
+
+<div class="page-template page-template-wide page-template-2-col">
+<ar:Banner runat="server" />
+
+<section role="main">
+  <div class="row">
+    <div id="AsidePane" class="aside" runat="server"></div>
+    <div id="ContentPane" class="content" runat="server"></div>
+  </div>
+</section>
+
+<ar:ContentInfo runat="server" />
+</div>
