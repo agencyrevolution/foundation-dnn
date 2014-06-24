@@ -6,11 +6,6 @@
   @extend .expand;
 }
 
-.locator {
-
-
-}
-
 .firstName, .lastName, .city, .state {
   @extend .small-6;
   @extend .columns;

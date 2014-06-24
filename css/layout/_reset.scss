@@ -3,6 +3,12 @@
 .dnnSortable { &.ui-sortable, &.ui-droppable { padding: inherit; } }
 .aside { .ModRevMoonRayFormC, .dnnFormAndList { background-color: white; } }
 
+.showControlBar {
+  body { margin-top: 53px; }
+  .fixed, .blur { top: 53px; }
+  #canvas { margin-top: -53px; }
+}
+
 html, body { overflow-x: hidden; }
 
 .half-rule { width: 100px; margin: 40px auto; }
@@ -31,10 +37,6 @@ html, body { overflow-x: hidden; }
 
   }
 
-}
-
-.page-template-wide .row {
-  width: 100%;
 }
 
 @media #{$medium-up} {
