@@ -9,10 +9,12 @@
 <ar:Banner runat="server" />
 
 <section role="main">
+  <div id="TopPane" class="top" runat="server"></div>
   <div class="row">
-    <div id="AsidePane" class="aside" runat="server"></div>
+    <div id="AsidePane" class="aside" role="complementary" runat="server"></div>
     <div id="ContentPane" class="content" runat="server"></div>
   </div>
+  <div id="BottomPane" class="bottom" runat="server"></div>
 </section>
 
 <ar:ContentInfo runat="server" />

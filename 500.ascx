@@ -10,8 +10,8 @@
 <section id="oops">
   <div class="row">
     <div class="large-9 medium-9 small-12 columns small-centered">
-      <h5>500: Something's wrong!</h5>
-      <h1 class="oversized">Don't panic...</h1>
+      <h5>404: Page Not Found</h5>
+      <h1 class="oversized">Keep on looking...</h1>
 
       <p class="lead bottom40">Double check the URL or head back to the <a href="/">homepage.</a> If you continue to get this page, email us at <a href="mailto:info@<%= PortalSettings.PortalAlias.HTTPAlias %>.com">info@<%= PortalSettings.PortalAlias.HTTPAlias %>.</a></p>
 
