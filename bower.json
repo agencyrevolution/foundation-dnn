@@ -1,6 +1,7 @@
 {
-  "name": "foundation-libsass-template",
+  "name": "foundation-dnn-template",
   "dependencies": {
-    "foundation": "zurb/bower-foundation"
+    "foundation": "zurb/bower-foundation",
+    "slick-carousel": "~1.3.6"
   }
 }

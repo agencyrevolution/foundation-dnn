@@ -4,7 +4,7 @@ module.exports = function(grunt) {
 
     sass: {
       options: {
-        includePaths: ['bower_components/foundation/scss','bower_components/utility-belt/scss']
+        includePaths: ['bower_components/foundation/scss','bower_components/slick-carousel/slick']
       },
       dist: {
         options: {
@@ -22,18 +22,19 @@ module.exports = function(grunt) {
       options: {
         browsers: ['last 2 version']
       },
-      multiple_files: {
-        expand: true,
-        flatten: true,
-        src: 'css/build/*.css',
-        dest: 'css/build/prefixed/'
+      single_file: {
+        options: {
+          // Target-specific options go here.
+        },
+        src: 'css/build/skin.css',
+        dest: 'css/build/skin.pre.css'
       }
     },
 
     cssmin: {
       combine: {
         files: {
-          'css/build/minified/skin.css': ['css/build/prefixed/skin.css']
+          'css/build/skin.min.css': ['css/build/skin.pre.css']
         }
       }
     },
@@ -48,14 +49,14 @@ module.exports = function(grunt) {
           'js/libs/*.js',
           'js/skin.js'
         ],
-        dest: 'js/build/production.js'
+        dest: 'js/build/skin.js'
       }
     },
 
     uglify: {
       build: {
-        src: 'js/build/production.js',
-        dest: 'js/build/production.min.js'
+        src: 'js/build/skin.js',
+        dest: 'js/build/skin.min.js'
       }
     },
 
@@ -72,7 +73,7 @@ module.exports = function(grunt) {
 
     watch: {
       options: {
-        livereload: true,
+        livereload: false,
       },
       scripts: {
         files: ['js/*.js'],
@@ -95,17 +96,7 @@ module.exports = function(grunt) {
           spawn: false,
         }
       }
-    },
-
-    connect: {
-      server: {
-        options: {
-          port: 8000,
-          base: './',
-          livereload: true
-        }
-      }
-    },
+    }
 
   });
 
