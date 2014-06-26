@@ -2,6 +2,7 @@
   "name": "foundation-dnn-template",
   "dependencies": {
     "foundation": "zurb/bower-foundation",
-    "slick-carousel": "~1.3.6"
+    "slick-carousel": "~1.3.6",
+    "jquery-placeholder": "~2.0.8"
   }
 }

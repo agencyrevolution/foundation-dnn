@@ -5,6 +5,7 @@ if (!$("body").hasClass("dnnEditState")) {
 
 // Reset Quote Form
 $(function() {
+  $('input, textarea').placeholder();
   $(":input",".addressAdv").attr("placeholder", "Apt.");
   // convert quote form labels to placeholders
   $(":input",".field").each(function(index, elem) {

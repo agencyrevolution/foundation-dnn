@@ -46,6 +46,7 @@ module.exports = function(grunt) {
     concat: {
       dist: {
         src: [
+          'bower_components/jquery-placeholder/jquery.placeholder.js',
           'js/libs/*.js',
           'js/skin.js'
         ],
