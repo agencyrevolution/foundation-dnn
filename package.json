@@ -7,18 +7,15 @@
   },
   "devDependencies": {
     "node-sass": "~0.9.3",
-    "grunt": "~0.4.5",
-    "grunt-sass": "~0.14.0",
-    "grunt-contrib-watch": "~0.6.1",
-    "grunt-contrib-imagemin": "~0.7.1",
-    "grunt-contrib-concat": "~0.4.0",
-    "grunt-contrib-cssmin": "~0.10.0",
-    "grunt-contrib-jshint": "~0.10.0",
-    "grunt-autoprefixer": "~0.7.6",
-    "grunt-contrib-uglify": "~0.5.0",
-    "grunt-grunticon": "~1.2.7"
-  },
-  "dependencies": {
-    "load-grunt-tasks": "~0.6.0"
+    "gulp": "~3.8.5",
+    "gulp-jshint": "~1.6.4",
+    "gulp-concat": "~2.2.0",
+    "gulp-rename": "~1.2.0",
+    "gulp-uglify": "~0.3.1",
+    "gulp-sass": "~0.7.2",
+    "gulp-autoprefixer": "~0.0.8",
+    "gulp-cssmin": "~0.1.6",
+    "gulp-imagemin": "~0.6.1",
+    "imagemin-pngcrush": "~0.1.0"
   }
 }
