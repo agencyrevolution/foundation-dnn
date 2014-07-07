@@ -54,7 +54,7 @@ gulp.task('images', function() {
 gulp.task('watch', function() {
   gulp.watch('./js/**/*.js', ['lint', 'scripts']);
   gulp.watch('./css/**/*.scss', ['stylesheets']);
-  gulp.watch('./images/**/*.{png,jpg,gif,svg}', [imagemin]);
+  gulp.watch('./images/**/*.{png,jpg,gif,svg}', ['imagemin']);
 });
 
 gulp.task('default', ['scripts','stylesheets','images']);
