@@ -33,7 +33,7 @@ gulp.task('stylesheets', function() {
       }))
       .pipe(gulp.dest('./css/build/'))
       .pipe(rename('skin.src.css'))
-      .pipe(prefix("last 2 version"))
+      .pipe(prefix('last 2 version'))
       .pipe(gulp.dest('./css/build/'))
       .pipe(rename('skin.css'))
       .pipe(cssmin())
