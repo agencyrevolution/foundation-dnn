@@ -12,10 +12,10 @@ npm install && bower install
 
 Watch the project
 ```
-grunt dev
+gulp dev
 ```
 
 Compile for production
 ```
-grunt
+gulp
 ```
