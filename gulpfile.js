@@ -42,7 +42,7 @@ gulp.task('stylesheets', function() {
 });
 
 gulp.task('images', function() {
-  gulp.src('./images/*')
+  return gulp.src('./images/*')
       .pipe(imagemin({
           progressive: false,
           svgoPlugins: [{removeViewBox: false}],
