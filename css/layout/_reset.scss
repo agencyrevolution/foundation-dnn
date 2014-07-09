@@ -1,46 +1,27 @@
+// DotNetNuke
 .dnnEditState .DnnModule { opacity: 1 !important; }
 .DNNEmptyPane { display: none !important; }
 .dnnSortable { &.ui-sortable, &.ui-droppable { padding: inherit; } }
 .aside { .ModRevMoonRayFormC, .dnnFormAndList { background-color: white; } }
-
 .showControlBar {
-  body { margin-top: 53px; }
-  .fixed, .blur { top: 53px; }
-  #canvas { margin-top: -53px; }
+  $ControlBarHeight: 53px;
+  body { margin-top: $ControlBarHeight; }
+  .fixed, .blur { top: $ControlBarHeight; }
+  #canvas { margin-top: (-$ControlBarHeight); }
 }
 
-.half-rule { width: 100px; margin: 40px auto; }
-
-.primary-color   { background-color: $primary-color; }
-.secondary-color { background-color: $secondary-color; }
-.success-color   { background-color: $success-color; }
-.alert-color     { background-color: $alert-color; }
-
-[role="main"] {
-  .content {
-    @extend .medium-8;
-    @extend .columns;
-    min-height: 25em;
-  }
-
-  .aside {
-    @extend .medium-4;
-    @extend .columns;
-    @extend .right;
-
-    &.DNNEmptyPane + .content {
-      @extend .medium-12;
-      border-right: none;
-    }
-
-  }
-
+// Content Editor
+[style] {
+  font-family: inherit !important;
+  font-size: inherit !important;
+  font-weight: inherit !important;
+}
+[style], [color] {
+  color: inherit !important;
 }
 
-@media #{$medium-up} {
-  [role="main"] {
-    .aside {
-      padding-left: 20px;
-    }
+h1, h2, h3, h4, h5, h6 {
+  b, strong {
+    font-weight: inherit !important;
   }
 }
