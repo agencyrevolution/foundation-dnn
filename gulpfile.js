@@ -29,7 +29,7 @@ gulp.task('scripts', function() {
 gulp.task('stylesheets', function() {
   return gulp.src('./css/skin.scss')
       .pipe(sass({
-        includePaths: ['bower_components/foundation/scss','bower_components/slick-carousel/slick']
+        includePaths: ['bower_components/foundation/scss','bower_components/utility-belt/scss','bower_components/slick-carousel/slick']
       }))
       .pipe(gulp.dest('./css/build/'))
       .pipe(rename('skin.src.css'))
