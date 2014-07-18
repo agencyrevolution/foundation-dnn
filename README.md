@@ -12,17 +12,6 @@ npm install
 
 ### Commands
 
-Manually install assets
-```
-bower install
-```
-
-Watch the project
-```
-gulp dev
-```
-
-Compile for production
-```
-gulp
-```
+* `bower install` Manually install components
+* `gulp dev` Watch the project for development
+* `gulp` Compile for production and deployment
