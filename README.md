@@ -7,10 +7,15 @@
 ## Installation
 
 ```
-npm install && bower install
+npm install
 ```
 
 ### Commands
+
+Manually install assets
+```
+bower install
+```
 
 Watch the project
 ```
