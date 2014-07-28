@@ -2,7 +2,10 @@
 
 <img src="http://foundation.agencyrevolution.com/Portals/design/Skins/Foundation/image/hero-image.svg" alt="Foundation-dnn" width="300" align="right"/>
 
-*A world-class skin for DNN based on the ZURB Foundation Framework*
+*Build a site theme with Foundation on the DNN platform.*
+
+* Requires: DotNetNuke 7.0
+* Download: [get latest release](https://github.com/agencyrevolution/foundation-dnn/releases/latest), move to your project, unzip
 
 ## Installation
 
