@@ -4,7 +4,7 @@ $(document).foundation();
 
 // Document Ready
 $(function() {
-  'use strict';
+  "use strict";
   // $('.slider').slick({
   //   autoplay: true,
   //   speed: 300
