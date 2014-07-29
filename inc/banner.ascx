@@ -6,8 +6,8 @@
 <%@ Register TagPrefix="fnn" TagName="TopBar" Src="~/Admin/AgencyRev/Framework/Foundation/Components/Top-bar.ascx" %>
 
 <ar:Init runat='server'/>
-<dnn:DnnCssInclude runat="server" FilePath="css/build/skin.pre.css" PathNameAlias="SkinPath" ForceProvider="DnnPageHeaderProvider" Priority="2" />
-<dnn:DnnJsInclude runat="server" FilePath="js/build/skin.js" PathNameAlias="SkinPath" ForceProvider="DnnFormBottomProvider" Priority="4" />
+<dnn:DnnCssInclude runat="server" FilePath="css/build/skin.min.css" PathNameAlias="SkinPath" ForceProvider="DnnPageHeaderProvider" Priority="2" />
+<dnn:DnnJsInclude runat="server" FilePath="js/build/skin.min.js" PathNameAlias="SkinPath" ForceProvider="DnnFormBottomProvider" Priority="4" />
 
 <div class="header-wrap">
   <fnn:TopBar runat="server"
