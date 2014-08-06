@@ -13,7 +13,6 @@
     <div class="small-12 columns text-center">
       <h1><%= PortalSettings.ActiveTab.TabName %></h1>
       <h3 class="subheader"><%= PortalSettings.ActiveTab.Description %></h3>
-      <a href="/insurance-quotes" class="button secondary large">Get a Quote</a>
       <div id="FeaturePane" class="feature" runat="server"></div>
     </div>
   </div>
