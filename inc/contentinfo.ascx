@@ -6,6 +6,7 @@
 <%@ Register TagPrefix="avt" TagName="MyTokens" Src="~/DesktopModules/avt.MyTokens/SkinObjectReplacer.ascx" %>
 
 <hr class="half-rule">
+<footer role="contentinfo">
 <div class="footer-top row">
   <div class="small-12 columns text-center">
     <h4>We want to protect what matters most to you.</h4>
@@ -21,3 +22,4 @@
     <li><dnn:Login runat="server" id="dnnLogin" Text="Sign In" LogoffText="Sign Out" /></li>
   </ul>
 </div>
+</footer>
