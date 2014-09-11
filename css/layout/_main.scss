@@ -16,11 +16,11 @@
     }
 
   }
+  
+  // Half size HR
+  .half-rule { width: 100px; margin: 40px auto; }
 
 }
-
-// Half size HR
-.half-rule { width: 100px; margin: 40px auto; }
 
 @media #{$medium-up} {
   [role="main"] {
