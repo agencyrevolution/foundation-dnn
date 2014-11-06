@@ -9,6 +9,7 @@
 <dnn:DnnCssInclude runat="server" FilePath="css/build/skin.min.css" PathNameAlias="SkinPath" ForceProvider="DnnPageHeaderProvider" Priority="6" />
 <dnn:DnnJsInclude runat="server" FilePath="js/build/skin.min.js" PathNameAlias="SkinPath" ForceProvider="DnnFormBottomProvider" Priority="4" />
 
+<header role="banner">
 <div class="header-wrap">
   <fnn:TopBar runat="server"
     RightNode="*,0,2"
@@ -16,3 +17,4 @@
     Hover="false"
   />
 </div>
+</header>
