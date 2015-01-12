@@ -1,10 +1,13 @@
 /*global $:false */
+
 // Load Foundation
 $(document).foundation();
 
 // Document Ready
 $(function() {
+
   "use strict";
+
   // $('.slider-main').slick({
   //   autoplay: true,
   //   autoplaySpeed: 5000,
@@ -15,4 +18,5 @@ $(function() {
   //   slide: "div",
   //   cssEase: "linear"
   // });
+  
 });
