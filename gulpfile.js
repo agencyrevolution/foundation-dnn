@@ -8,8 +8,6 @@ var uglify = require("gulp-uglify");
 var sass = require("gulp-sass");
 var prefix = require("gulp-autoprefixer");
 var cssmin = require("gulp-cssmin");
-var imagemin = require("gulp-imagemin");
-var pngcrush = require("imagemin-pngcrush");
 
 // Lint JS
 gulp.task("lint", function() {
@@ -43,22 +41,11 @@ gulp.task("stylesheets", function() {
       .pipe(gulp.dest("./css/build/"));
 });
 
-gulp.task("images", function() {
-  return gulp.src("./images/*")
-      .pipe(imagemin({
-          progressive: false,
-          svgoPlugins: [{removeViewBox: false}],
-          use: [pngcrush()]
-      }))
-      .pipe(gulp.dest("./images/"));
-});
-
 gulp.task("watch", function() {
   gulp.watch("./js/**/*.js", ["lint", "scripts"]);
   gulp.watch("./css/**/*.scss", ["stylesheets"]);
-  gulp.watch("./images/**/*.{png,jpg,gif,svg}", ["imagemin"]);
 });
 
-gulp.task("default", ["scripts","stylesheets","images"]);
+gulp.task("default", ["scripts","stylesheets"]);
 
 gulp.task("dev", ["watch"]);
