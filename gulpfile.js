@@ -18,7 +18,12 @@ gulp.task("lint", function() {
 
 // Concat & Minify JS
 gulp.task("scripts", function() {
-  return gulp.src(["bower_components/jquery-placeholder/jquery.placeholder.js","js/libs/*.js","./js/skin.js"])
+  return gulp.src([
+      "bower_components/object-fit/dist/polyfill.object-fit.js",
+      "bower_components/jquery-placeholder/jquery.placeholder.js",
+      "js/libs/*.js",
+      "./js/skin.js"
+    ])
     .pipe(concat("all.js"))
     .pipe(gulp.dest("./js/build/"))
     .pipe(rename("skin.min.js"))
@@ -29,7 +34,11 @@ gulp.task("scripts", function() {
 gulp.task("stylesheets", function() {
   return gulp.src("./css/skin.scss")
       .pipe(sass({
-        includePaths: ["bower_components/foundation/scss","bower_components/utility-belt/scss","bower_components/slick-carousel/slick"]
+        includePaths: [
+          "bower_components/foundation/scss",
+          "bower_components/utility-belt/scss",
+          "bower_components/slick-carousel/slick"
+        ]
       }))
       .pipe(gulp.dest("./css/build/"))
       .pipe(rename("skin.src.css"))
