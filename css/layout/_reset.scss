@@ -10,6 +10,15 @@
   #canvas { margin-top: (-$ControlBarHeight); }
 }
 
+// Editor Controls
+html, body {
+  overflow-x: hidden;
+}
+
+* {
+  -webkit-overflow-scrolling: touch;
+}
+
 // Content Editor
 [style] {
   font-family: inherit !important;
