@@ -3,12 +3,26 @@
 .DNNEmptyPane { display: none !important; }
 .dnnSortable { &.ui-sortable, &.ui-droppable { padding: inherit; } }
 .aside { .ModRevMoonRayFormC, .dnnFormAndList { background-color: white; } }
+
+// Control Bar
 .showControlBar {
   $ControlBarHeight: 53px;
   body { margin-top: $ControlBarHeight; }
   .fixed, .blur { top: $ControlBarHeight; }
   #canvas { margin-top: (-$ControlBarHeight); }
 }
+
+#ControlBar table {
+  &, & * {
+    height: inherit;
+    margin: inherit;
+    padding: inherit;
+  }
+}
+
+// Editor Controls
+html, body { overflow-x: hidden; }
+* { -webkit-overflow-scrolling: touch; }
 
 // Content Editor
 [style] {
@@ -23,14 +37,6 @@
 h1, h2, h3, h4, h5, h6 {
   b, strong {
     font-weight: inherit !important;
-  }
-}
-
-#ControlBar {
-  table, table * {
-    height: inherit;
-    margin: inherit;
-    padding: inherit;
   }
 }
 
