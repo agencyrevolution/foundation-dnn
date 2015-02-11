@@ -1,0 +1,31 @@
+[role="main"] {
+  .content {
+    @extend .medium-8;
+    @extend .columns;
+    min-height: 25em;
+  }
+
+  .aside {
+    @extend .medium-4;
+    @extend .columns;
+    @extend .right;
+
+    &.DNNEmptyPane + .content {
+      @extend .medium-12;
+      border-right: none;
+    }
+
+  }
+  
+  // Half size HR
+  .half-rule { width: 100px; margin: 40px auto; }
+
+}
+
+@media #{$medium-up} {
+  [role="main"] {
+    .aside {
+      padding-left: 20px;
+    }
+  }
+}

@@ -1,0 +1,2 @@
+/*global $:false;*/
+$(document).foundation();
