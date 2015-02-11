@@ -1,12 +1,22 @@
 /*global $:false */
+
 // Load Foundation
 $(document).foundation();
 
 // Document Ready
 $(function() {
+
   "use strict";
-  // $('.slider').slick({
+
+  // $('.slider-main').slick({
   //   autoplay: true,
-  //   speed: 300
+  //   autoplaySpeed: 5000,
+  //   dots: true,
+  //   fade: true,
+  //   infinite: true,
+  //   speed: 300,
+  //   slide: "div",
+  //   cssEase: "linear"
   // });
+  
 });
