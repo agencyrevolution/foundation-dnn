@@ -1,0 +1,27 @@
+.page-template-feature-small.page-template-2-col {
+  .feature-wrap-small {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-color: $primary-color;
+    padding: rem-calc(60) rem-calc(15) rem-calc(60);
+    margin-top: rem-calc(15);
+
+    @media #{$small-only} {
+      margin-right: 0;
+    }
+
+    h1, h3, h4 {
+      color: white;
+      margin: 0;
+    }
+
+  }
+
+  @media #{$medium-up} {
+    .feature-content {
+      padding: 0 rem-calc(25) 0 rem-calc(15);
+    }
+  }
+}
+
