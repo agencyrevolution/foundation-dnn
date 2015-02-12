@@ -10,11 +10,11 @@
 ## Installation
 
 ```
-npm install
+sudo npm install
 ```
 
 ### Commands
 
-* `bower install` Manually install components
+* `sudo npm install --production` Installs only dependencies for production
 * `gulp dev` Watch the project for development
-* `gulp` Compile for production and deployment
+* `gulp build` Build the project for production
