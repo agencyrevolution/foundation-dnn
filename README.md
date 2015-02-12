@@ -15,6 +15,11 @@ sudo npm install
 
 ### Commands
 
-* `sudo npm install --production` Installs only dependencies for production
 * `gulp dev` Watch the project for development
 * `gulp build` Build the project for production
+
+* `npm run clean` Destroys the distribution folder
+* `npm run clean-dev` Destroys the distribution and npm folder
+* `npm run install-global` Installs all devDependencies globally
+* `npm run link-global` Links up all global devDependencies to your project
+* `sudo npm install --production` Installs only dependencies for production
