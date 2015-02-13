@@ -14,6 +14,20 @@ sudo npm install --production
 gulp dev
 ```
 
+## Custom Theme
+
+```
+# Create a new custom branch where you can modify files
+git checkout -b custom
+
+# Stage and commit your changes
+git add -A
+git commit -m "Changes..."
+
+# Get latest changes to the framework and merge them into your branch
+git pull
+```
+
 ### Commands
 
 * `gulp dev` Watch the project for development
@@ -21,3 +35,4 @@ gulp dev
 
 * `npm run global` Installs gulp pacakges globally and links them to your project.
 * `npm run clean` Destroys all generated directories.
+
