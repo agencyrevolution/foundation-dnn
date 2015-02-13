@@ -10,7 +10,9 @@
 ## Installation
 
 ```
+./npm-link
 sudo npm install --production
+./npm-preen
 gulp dev
 ```
 
