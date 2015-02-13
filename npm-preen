@@ -1,17 +1,25 @@
 #! /bin/bash
 
-sudo chown -R $(whoami) ~/.npm
-
 if mv node_modules/zurb-foundation-5/scss styles/vendor/foundation; then
+  rm -rf node_modules/zurb-foundation-5
+else
+  rm -rf styles/vendor/foundation
+  mv node_modules/zurb-foundation-5/scss
   rm -rf node_modules/zurb-foundation-5
 fi
 
 if mv node_modules/utility-belt/scss styles/vendor/utility-belt; then
   rm -rf node_modules/utility-belt
+else
+  rm -rf styles/vendor/utility-belt
+  mv node_modules/utility-belt/scss
+  rm -rf node_modules/utility-belt
 fi
 
 if mv node_modules/slick-carousel/slick styles/vendor/slick; then
   rm -rf node_modules/slick-carousel
+else
+  rm -rf styles/vendor/slick
+  mv node_modules/slick-carousel/slick
+  rm -rf node_modules/slick-carousel
 fi
-
-npm run link-global

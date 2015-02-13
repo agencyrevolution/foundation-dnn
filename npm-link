@@ -1,5 +1,7 @@
 #! /bin/bash
 
+sudo chown -R $(whoami) ~/.npm
+
 npm link gulp-jshint
 npm link gulp-browserify
 npm link gulp-concat
