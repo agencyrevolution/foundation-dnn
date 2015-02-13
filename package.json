@@ -17,21 +17,15 @@
     "gulp": "~3.8.11"
   },
   "dependencies": {
-    "fastclick": "~1.0.6",
-    "jquery-placeholder": "~2.1.0",
-    "jquery.cookie": "~1.4.1",
-    "modernizr": "~3.0.0-alpha",
     "slick-carousel": "~1.4.1",
     "utility-belt": "stephenway/utility-belt",
     "zurb-foundation-5": "~5.4.7"
   },
   "scripts": {
-    "clean": "sudo rm -rf ./dist",
-    "clean-dev": "sudo rm -rf ./dist ./node_modules",
-    "install-global": "sudo npm install -g gulp-jshint gulp-browserify gulp-concat gulp-sass gulp-autoprefixer gulp-minify-css gulp-rename gulp-uglify gulp",
-    "link-global": "sudo npm link gulp-jshint & sudo npm link gulp-browserify & sudo npm link gulp-concat & sudo npm link gulp-sass & sudo npm link gulp-autoprefixer & sudo npm link gulp-minify-css & sudo npm link gulp-rename & sudo npm link gulp-uglify & sudo npm link gulp"
-  },
-  "bin": {
+    "preinstall": "./npm-link",
+    "postinstall": "./npm-preen",
+    "global": "./npm-install-global",
+    "clean": "sudo rm -rf dist .sass-cache"
   },
   "private": true
 }

@@ -33,14 +33,14 @@ gulp.task('browserify', function() {
 
 gulp.task('stylesheets', function() {
   gulp.src('./styles/*.scss')
-      .pipe(sass({onError: function(e) { console.log(e); },
-        includePaths: [
-          'node_modules/zurb-foundation-5/scss',
-          'node_modules/utility-belt/scss',
-          'node_modules/slick-carousel/slick'
-        ]}))
-      .pipe(prefix('last 2 versions'))
-      .pipe(gulp.dest('./dist/css/'));
+    .pipe(sass({onError: function(e) { console.log(e); },
+      includePaths: [
+        'styles/vendor/foundation',
+        'styles/vendor/utility-belt',
+        'styles/vendor/slick'
+      ]}))
+    .pipe(prefix('last 2 versions'))
+    .pipe(gulp.dest('./dist/css/'));
 });
 
 gulp.task('minifyJS', function() {
@@ -73,4 +73,5 @@ gulp.task('default', ['browserify','stylesheets']);
 
 gulp.task('dev', ['default','watch']);
 
-gulp.task('build', ['default', 'minify']);
+gulp.task('build', ['default','minify']);
+

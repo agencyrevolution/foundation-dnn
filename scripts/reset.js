@@ -1,14 +1,9 @@
 /*global $:false */
-var jqueryPlaceholder = require('jquery-placeholder');
 
-// Remove stylesheet for DNN Admin Interface when logged out.
-if (!$('body').hasClass('dnnEditState')) {
-  $('[href*="default.css"]').remove();
-}
-
-// Reset Quote Form
-$(function() {
+document.addEventListener('DOMContentLoaded', function() {
   'use strict';
+
+  // Reset Quote Form
   $('input, textarea').placeholder();
   $(':input','.addressAdv').attr('placeholder', 'Apt.');
   // convert quote form labels to placeholders
