@@ -19,7 +19,7 @@
   "dependencies": {
     "slick-carousel": "~1.4.1",
     "utility-belt": "stephenway/utility-belt",
-    "zurb-foundation-5": "~5.4.7"
+    "zurb-foundation-5": "~5.5.1"
   },
   "scripts": {
     "preinstall": "./npm-link",
