@@ -17,6 +17,13 @@ gulp dev
 ## Custom Theme
 
 ```
+# Install Hub Subcommand for this
+brew install hub
+
+# Create new repo
+git remote rename origin upstream
+git create agencyrevolution/agency-name
+
 # Create a new custom branch where you can modify files
 git checkout -b custom
 
@@ -24,8 +31,11 @@ git checkout -b custom
 git add -A
 git commit -m "Changes..."
 
-# Get latest changes to the framework and merge them into your branch
-git pull
+# Get latest changes to the framework and merge them into your custom branch
+git pull upstream master
+
+# Publish the changes to your new repo
+git push origin master
 ```
 
 ### Commands
