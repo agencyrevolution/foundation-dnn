@@ -10,7 +10,8 @@
 ## Installation
 
 ```
-sudo npm install
+sudo npm install --production
+gulp dev
 ```
 
 ### Commands
@@ -18,8 +19,5 @@ sudo npm install
 * `gulp dev` Watch the project for development
 * `gulp build` Build the project for production
 
-* `npm run clean` Destroys the distribution folder
-* `npm run clean-dev` Destroys the distribution and npm folder
-* `npm run install-global` Installs all devDependencies globally
-* `npm run link-global` Links up all global devDependencies to your project
-* `sudo npm install --production` Installs only dependencies for production
+* `npm run global` Installs gulp pacakges globally and links them to your project.
+* `npm run clean` Destroys all generated directories.
