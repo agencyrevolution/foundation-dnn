@@ -1,5 +1,5 @@
 /*global $:false;*/
-document.addEventListener('DOMContentLoaded', function() {
+$( document ).ready(function() {
   'use strict';
 
   // Includes
