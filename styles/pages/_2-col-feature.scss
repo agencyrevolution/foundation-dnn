@@ -1,11 +1,12 @@
 .page-template-feature.page-template-2-col {
   .feature-wrap {
-    background-size: cover;
-    background-position: 100% 25%;
     background-color: $primary-color;
+    background-position: 100% 25%;
+    background-size: cover;
     padding: rem-calc(76) 0;
-    h1, h3 {
-      color: white;
-    }
+
+    h1,
+    h3 { color: #fff; }
+
   }
 }

@@ -1,5 +1,6 @@
 // Fix viewport for editing
-html, body.dnnEditState{
+html,
+body.dnnEditState {
   overflow-x: hidden;
 }
 
@@ -8,8 +9,9 @@ html, body.dnnEditState{
 
 // Fix Control Bar Height
 .showControlBar {
-  $ControlBarHeight: 53px;
-  body { margin-top: $ControlBarHeight; }
-  .fixed, .blur { top: $ControlBarHeight; }
-  #canvas { margin-top: (-$ControlBarHeight); }
+  $control-bar-height: 53px;
+  body { margin-top: $control-bar-height; }
+  #canvas { margin-top: (-$control-bar-height); }
+  .fixed,
+  .blur { top: $control-bar-height; }
 }

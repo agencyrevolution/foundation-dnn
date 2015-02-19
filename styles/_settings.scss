@@ -1,18 +1,18 @@
-// 
+//
 // FOUNDATION SETTINGS
 //
 
 //
 // FILE PATHS
 //
-$root  : "../../../";
-$image : "#{$root}image/";
-$icon  : "#{$image}Someicons/PNG/";
-$fonts : "#{$root}fonts/";
-$js    : "#{$root}js/";
+$root  : '../../../';
+$image : '#{$root}image/';
+$icon  : '#{$image}Someicons/PNG/';
+$fonts : '#{$root}fonts/';
+$js    : '#{$root}js/';
 
 // Uncomment to use rem-calc() in your settings
-@import "foundation/functions";
+@import 'foundation/functions';
 
 // $experimental: true;
 
@@ -47,7 +47,7 @@ $js    : "#{$root}js/";
 // We use these to control various global styles
 // $body-bg: #fff;
 // $body-font-color: #222;
-$body-font-family: "Helvetica", Helvetica, Arial, sans-serif;
+$body-font-family: 'Helvetica', Helvetica, Arial, sans-serif;
 // $body-font-weight: normal;
 // $body-font-style: normal;
 
@@ -83,25 +83,25 @@ $medium-range: (40.063em, 64.5em);
 // $xlarge-range: (90.063em, 120em);
 // $xxlarge-range: (120.063em);
 
-// $screen: "only screen";
+// $screen: 'only screen';
 
-// $landscape: "#{$screen} and (orientation: landscape)";
-// $portrait: "#{$screen} and (orientation: portrait)";
+// $landscape: '#{$screen} and (orientation: landscape)';
+// $portrait: '#{$screen} and (orientation: portrait)';
 
 // $small-up: $screen;
-// $small-only: "#{$screen} and (max-width: #{upper-bound($small-range)})";
+// $small-only: '#{$screen} and (max-width: #{upper-bound($small-range)})';
 
-// $medium-up: "#{$screen} and (min-width:#{lower-bound($medium-range)})";
-// $medium-only: "#{$screen} and (min-width:#{lower-bound($medium-range)}) and (max-width:#{upper-bound($medium-range)})";
+// $medium-up: '#{$screen} and (min-width:#{lower-bound($medium-range)})';
+// $medium-only: '#{$screen} and (min-width:#{lower-bound($medium-range)}) and (max-width:#{upper-bound($medium-range)})';
 
-// $large-up: "#{$screen} and (min-width:#{lower-bound($large-range)})";
-// $large-only: "#{$screen} and (min-width:#{lower-bound($large-range)}) and (max-width:#{upper-bound($large-range)})";
+// $large-up: '#{$screen} and (min-width:#{lower-bound($large-range)})';
+// $large-only: '#{$screen} and (min-width:#{lower-bound($large-range)}) and (max-width:#{upper-bound($large-range)})';
 
-// $xlarge-up: "#{$screen} and (min-width:#{lower-bound($xlarge-range)})";
-// $xlarge-only: "#{$screen} and (min-width:#{lower-bound($xlarge-range)}) and (max-width:#{upper-bound($xlarge-range)})";
+// $xlarge-up: '#{$screen} and (min-width:#{lower-bound($xlarge-range)})';
+// $xlarge-only: '#{$screen} and (min-width:#{lower-bound($xlarge-range)}) and (max-width:#{upper-bound($xlarge-range)})';
 
-// $xxlarge-up: "#{$screen} and (min-width:#{lower-bound($xxlarge-range)})";
-// $xxlarge-only: "#{$screen} and (min-width:#{lower-bound($xxlarge-range)}) and (max-width:#{upper-bound($xxlarge-range)})";
+// $xxlarge-up: '#{$screen} and (min-width:#{lower-bound($xxlarge-range)})';
+// $xxlarge-only: '#{$screen} and (min-width:#{lower-bound($xxlarge-range)}) and (max-width:#{upper-bound($xxlarge-range)})';
 
 // Legacy
 // $small: $medium-up;
@@ -206,7 +206,7 @@ $medium-range: (40.063em, 64.5em);
 
 // We use these to control the slash between breadcrumbs
 // $crumb-slash-color: #aaa;
-// $crumb-slash: "/";
+// $crumb-slash: '/';
 
 // Button Groups
 
@@ -451,7 +451,7 @@ $medium-range: (40.063em, 64.5em);
 // $include-html-type-classes: $include-html-classes;
 
 // We use these to control text styles.
-// $keystroke-font: "Consolas", "Menlo", "Courier", monospace;
+// $keystroke-font: 'Consolas', 'Menlo', 'Courier', monospace;
 // $keystroke-font-size: rem-calc(14);
 // $keystroke-font-color: #222;
 // $keystroke-font-color-alt: #fff;
@@ -546,13 +546,13 @@ $medium-range: (40.063em, 64.5em);
 // $off-canvas-overlay-background-hover: rgba(#FFF, 0.05);
 
 // Transition Variabls
-// $menu-slide: "transform 0.3s ease";
+// $menu-slide: 'transform 0.3s ease';
 
 // Slick
 
-// $slick-font-path: "./fonts/";
-// $slick-font-family: "slick";
-// $slick-loader-path: "./"
+// $slick-font-path: './fonts/';
+// $slick-font-family: 'slick';
+// $slick-loader-path: './'
 // $slick-arrow-color: white;
 // $slick-dot-color: black;
 // $slick-dot-color-active: $slick-dot-color;
@@ -720,8 +720,8 @@ $medium-range: (40.063em, 64.5em);
 // $reveal-border-width: 1px;
 // $reveal-border-color: #666;
 
-// $reveal-modal-class: "reveal-modal";
-// $close-reveal-modal-class: "close-reveal-modal";
+// $reveal-modal-class: 'reveal-modal';
+// $close-reveal-modal-class: 'close-reveal-modal';
 
 // Side Nav
 
@@ -813,7 +813,7 @@ $medium-range: (40.063em, 64.5em);
 // $sub-nav-active-padding: rem-calc(3 16);
 // $sub-nav-active-cursor: default;
 
-// $sub-nav-item-divider: "";
+// $sub-nav-item-divider: '';
 // $sub-nav-item-divider-margin: rem-calc(12);
 
 // Tables
@@ -971,14 +971,14 @@ $medium-range: (40.063em, 64.5em);
 // $topbar-transition-speed: 300ms;
 // Using rem-calc for the below breakpoint causes issues with top bar
 // $topbar-breakpoint: #{upper-bound($medium-range)}; // Change to 9999px for always mobile layout
-$topbar-media-query: "only screen and (min-width: #{upper-bound($medium-range)})";
+$topbar-media-query: 'only screen and (min-width: #{upper-bound($medium-range)})';
 
 // Divider Styles
 // $topbar-divider-border-bottom: solid 1px lighten($topbar-bg-color, 10%);
 // $topbar-divider-border-top: solid 1px darken($topbar-bg-color, 10%);
 
 // Sticky Class
-// $topbar-sticky-class: ".sticky";
+// $topbar-sticky-class: '.sticky';
 // $topbar-arrows: true; //Set false to remove the triangle icon from the menu item
 
 //
@@ -988,7 +988,7 @@ $topbar-media-query: "only screen and (min-width: #{upper-bound($medium-range)})
 // $include-html-type-classes: $include-html-classes;
 
 // We use these to control header font styles
-$header-font-family: "Helvetica", Helvetica, Arial, sans-serif;
+$header-font-family: 'Helvetica', Helvetica, Arial, sans-serif;
 // $header-font-weight: bold;
 // $header-font-style: normal;
 // $header-font-color: #222;

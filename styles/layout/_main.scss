@@ -1,4 +1,4 @@
-[role="main"] {
+[role='main'] {
   .content {
     @extend .medium-8;
     @extend .columns;
@@ -12,18 +12,21 @@
 
     &.DNNEmptyPane + .content {
       @extend .medium-12;
-      border-right: none;
+      border-right: 0;
     }
 
   }
-  
+
   // Half size HR
-  .half-rule { width: 100px; margin: 40px auto; }
+  .half-rule {
+    margin: 40px auto;
+    width: 100px;
+  }
 
 }
 
 @media #{$medium-up} {
-  [role="main"] {
+  [role='main'] {
     .aside {
       padding-left: 20px;
     }
