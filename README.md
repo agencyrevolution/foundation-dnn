@@ -11,7 +11,6 @@
 
 ```
 ./npm-install-global
-./npm-link
 sudo npm install --production
 ./npm-preen
 gulp dev
