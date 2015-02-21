@@ -44,14 +44,14 @@ gulp.task('stylesheets', function() {
 });
 
 gulp.task('minifyJS', function() {
-  gulp.src('./dist/js/*.js')
+  gulp.src('./dist/js/skin.js')
   .pipe(uglify())
   .pipe(rename({ suffix: '.min' }))
   .pipe(gulp.dest('./dist/js/'));
 });
 
 gulp.task('minifyCSS', function() {
-  gulp.src('./dist/css/*.css')
+  gulp.src(['./dist/css/edit.css', './dist/css/skin.css'])
     .pipe(minifyCSS())
     .pipe(rename({ suffix: '.min' }))
     .pipe(gulp.dest('./dist/css/'));
