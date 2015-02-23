@@ -69,9 +69,23 @@ gulp.task('watch', ['lint'], function() {
   ]);
 });
 
+gulp.task('watch-all', ['lint'], function() {
+  gulp.watch(['./scripts/*.js', './scripts/**/*.js'],[
+    'lint',
+    'browserify',
+    'minifyJS'
+  ]);
+  gulp.watch(['./styles/*.scss', './styles/**/*.scss'], [
+    'stylesheets',
+    'minifyCSS'
+  ]);
+});
+
 gulp.task('default', ['browserify','stylesheets']);
 
 gulp.task('dev', ['default','watch']);
 
 gulp.task('build', ['default','minify']);
+
+gulp.task('allthings', ['default','watch-all']);
 
