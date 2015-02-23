@@ -87,5 +87,5 @@ gulp.task('dev', ['default','watch']);
 
 gulp.task('build', ['default','minify']);
 
-gulp.task('allthings', ['default','watch-all']);
+gulp.task('build-watch', ['default','watch-all']);
 
