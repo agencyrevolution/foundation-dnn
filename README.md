@@ -34,7 +34,7 @@ brew install hub
 
 # Create new repo
 git remote rename origin upstream
-git create agencyrevolution/agency-name
+git create arclients/agency-name
 
 # Create a new custom branch where you can modify files
 git checkout -b custom
@@ -47,7 +47,7 @@ git commit -m "Changes..."
 git pull upstream master
 
 # Publish the changes to your new repo
-git push origin master
+git push origin custom
 ```
 
 ### Commands
