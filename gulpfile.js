@@ -31,6 +31,23 @@ gulp.task('browserify', function() {
   .pipe(gulp.dest('./dist/js/'));
 });
 
+// Browserify task
+gulp.task('browserify-min', function() {
+  // Single point of entry
+  gulp.src([ './scripts/main.js' ])
+  .pipe(browserify({
+    insertGlobals: true,
+    debug: true
+  }))
+  // Bundle to a single file
+  .pipe(concat('skin.js'))
+  // Output it to our dist folder
+  .pipe(gulp.dest('./dist/js/'))
+  .pipe(uglify())
+  .pipe(rename({ suffix: '.min' }))
+  .pipe(gulp.dest('./dist/js/'));
+});
+
 gulp.task('stylesheets', function() {
   gulp.src('./styles/*.scss')
     .pipe(sass({onError: function(e) { console.log(e); },
@@ -40,6 +57,21 @@ gulp.task('stylesheets', function() {
         'styles/vendor/slick/slick'
       ]}))
     .pipe(prefix('last 2 versions'))
+    .pipe(gulp.dest('./dist/css/'));
+});
+
+gulp.task('stylesheets-min', function() {
+  gulp.src('./styles/*.scss')
+    .pipe(sass({onError: function(e) { console.log(e); },
+      includePaths: [
+        'styles/vendor/foundation/scss',
+        'styles/vendor/utility-belt/scss',
+        'styles/vendor/slick/slick'
+      ]}))
+    .pipe(prefix('last 2 versions'))
+    .pipe(gulp.dest('./dist/css/'))
+    .pipe(minifyCSS())
+    .pipe(rename({ suffix: '.min' }))
     .pipe(gulp.dest('./dist/css/'));
 });
 
@@ -72,12 +104,10 @@ gulp.task('watch', ['lint'], function() {
 gulp.task('watch-all', ['lint'], function() {
   gulp.watch(['./scripts/*.js', './scripts/**/*.js'],[
     'lint',
-    'browserify',
-    'minifyJS'
+    'browserify-min'
   ]);
   gulp.watch(['./styles/*.scss', './styles/**/*.scss'], [
-    'stylesheets',
-    'minifyCSS'
+    'stylesheets-min'
   ]);
 });
 
@@ -88,4 +118,3 @@ gulp.task('dev', ['default','watch']);
 gulp.task('build', ['default','minify']);
 
 gulp.task('build-watch', ['default','watch-all']);
-
