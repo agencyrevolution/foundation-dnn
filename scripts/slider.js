@@ -1,8 +1,8 @@
 $('.slider-main').slick({
   autoplay: true,
   autoplaySpeed: 5000,
-  dots: true,
-  fade: true,
+  dots: false,
+  slidesToShow: 1,
   infinite: true,
   speed: 300,
   slide: 'div',

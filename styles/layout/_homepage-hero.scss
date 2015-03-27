@@ -1,0 +1,132 @@
+$homepage-hero-color: lighten($tertiary-color, 30);
+
+.homepage-hero {
+	padding-top: rem-calc(30);
+	padding-bottom: rem-calc(30);
+}
+.slider-wrap {
+	position: relative;
+}
+.slider-sidebar {
+	@extend .columns;
+	@extend .small-12;
+	@extend .medium-6; 
+	font-weight: bold;
+	text-align: center;
+	h2 {
+		font-size: rem-calc(50);
+		line-height: 1;
+	}
+}
+.slider-image {
+	@extend .columns;
+	@extend .small-12;
+	@extend .medium-6;
+	text-align: center;
+	img {
+		max-height: 220px;
+		display: inline-block;
+	}
+}
+.slick-prev, .slick-next {
+	position: absolute !important;
+	background-color: transparent !important;
+  color: transparent!important;
+  border: none !important;
+  outline: none !important;
+  top: 100px;
+  padding: 0 !important;
+  margin: 0 !important;
+  width: 70px !important;
+  &:before {
+  	font-family: FontAwesome !important;
+		color: $homepage-hero-color;
+		font-size: rem-calc(80);
+  }
+  &:hover {
+		&:before {
+			color: darken($homepage-hero-color, 20);
+		}
+	}
+}
+.slick-prev {
+	left: -80px;
+	&:before {
+		content: "\f053";
+	}	
+}
+.slick-next {
+	right: -94px;
+	&:before {
+		content: "\f054";
+	}	
+}
+
+@media #{$small-only} {
+	.slider-wrap {
+		padding: 0 rem-calc(30);
+	}
+	.slick-prev, .slick-next {
+		display: none !important;
+	}
+	.slider-image {
+		img {
+			max-width: 180px;
+			padding-top: rem-calc(20);
+			margin-top: rem-calc(20);
+			border-top: 1px solid lighten($homepage-hero-color, 10);
+		}
+	}
+}
+
+@media #{$medium-only} {
+	.slider-image {
+		img {
+			max-width: 210px;
+		}
+	}
+	.slider-sidebar {
+		h2 {
+			font-size: rem-calc(40);
+		}
+	}
+}
+
+@media #{$medium-up} {
+	.slider-sidebar, .slider-image {
+		height: 260px;
+		div {
+			position: relative;
+			top: 50%;
+			-webkit-transform: translateY(-50%);
+			-ms-transform: translateY(-50%);
+			transform: translateY(-50%);
+			padding-bottom: 0;
+		}
+	}
+	.slider-wrap {
+		padding: 0 rem-calc(80);
+	}
+	.slider-sidebar {
+		text-align: right;
+		border-right: 1px solid $homepage-hero-color;
+		padding-right: rem-calc(30) !important;
+	}
+	.slider-image {
+		padding-left: rem-calc(30) !important;
+		text-align: left;
+	}
+}
+
+@media #{$large-up} {
+	.slider-image {
+		img {
+			max-width: 300px;
+		}
+	}
+	.slider-sidebar {
+		h2 {
+			font-size: rem-calc(60);
+		}
+	}
+}

@@ -1,4 +1,6 @@
 [role='main'] {
+  padding-top: rem-calc(30);
+  padding-bottom: rem-calc(30);
   .content {
     @extend .medium-8;
     @extend .columns;

@@ -1,0 +1,95 @@
+$tagline-color: $tertiary-color;
+$tagline-button-color: $button-bg-color;
+
+.tagline {
+	background-color: $tagline-color;
+	border-bottom: 10px solid lighten($tagline-color, 10);
+}
+
+.quick-quote {
+	@extend .columns;
+	@extend .small-12;	
+	@extend .large-8;
+	padding: rem-calc(20) 0;
+}
+
+.qq-col {
+	@extend .columns;
+	@extend .small-12;
+	@extend .medium-4;
+	input {
+		text-align: center;
+	}
+	.button {
+		@include button($tagline-button-color);
+		border-bottom: 10px solid darken($tagline-button-color, 20);
+		margin: 0;		
+	}
+	.e_1, .e_2 {
+		height: 60px;
+		border: 0 !important;
+		border-bottom: 10px solid darken($tagline-color, 20) !important;
+		margin: 0;
+	}
+}
+
+.tagline-call {
+	@extend .columns;
+	@extend .small-12;
+	@extend .large-4;
+	text-align: center;
+	padding-bottom: rem-calc(20);
+	a, a:hover, a:focus, a:visited {
+		color: white;
+	}
+	div {
+		display: inline;
+		text-align: center;
+		font-weight: bold;
+		font-size: rem-calc(28);
+		color: white;
+		line-height: rem-calc(28);
+	}
+	.or-call {
+		font-size: rem-calc(22);
+		line-height: 1.5;
+	}
+}
+
+@media #{$small-only} {
+	.quick-quote {
+		padding: rem-calc(20) 0 0 0;
+	}
+	.qq-col {
+		padding-bottom: rem-calc(10) !important;
+	}	
+}
+
+@media #{$medium-up} {
+	.tagline-call {
+		div {
+			margin-right: rem-calc(10);
+		}
+	}
+}
+
+@media #{$large-up} {
+	.qq-col {
+		padding-left: 0;
+	}	
+	.tagline-call {
+		text-align: left;
+		padding-bottom: 0;
+	}
+	.tagline-wrap {
+		height: 100px;
+	}
+	.tagline-call div {
+		display: inline-block;
+		position: relative;
+		top: 50%;
+		-webkit-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		transform: translateY(-50%);	
+	}
+}

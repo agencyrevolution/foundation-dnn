@@ -2,6 +2,7 @@
 <%@ Register TagPrefix="dnn" Namespace="DotNetNuke.Web.Client.ClientResourceManagement" Assembly="DotNetNuke.Web.Client" %>
 <%@ Register TagPrefix="avt" TagName="MyTokens" Src="~/DesktopModules/avt.MyTokens/SkinObjectReplacer.ascx" %>
 <%@ Register TagPrefix="ar" TagName="Banner" Src="inc/banner.ascx" %>
+<%@ Register TagPrefix="ar" TagName="Catch" Src="inc/catch.ascx" %>
 <%@ Register TagPrefix="ar" TagName="ContentInfo" Src="inc/contentinfo.ascx" %>
 
 <div class="page-template page-template-feature page-template-2-col">
@@ -11,8 +12,7 @@
   <div class="feature-wrap-color"></div>
   <div class="row">
     <div class="small-12 columns text-center">
-      <h1><%= PortalSettings.ActiveTab.TabName %></h1>
-      <h3 class="subheader"><%= PortalSettings.ActiveTab.Description %></h3>
+      <h2><%= PortalSettings.ActiveTab.TabName %></h2>
       <div id="FeaturePane" class="feature" runat="server"></div>
     </div>
   </div>
@@ -26,6 +26,6 @@
   </div>
   <div id="BottomPane" class="bottom" runat="server"></div>
 </section>
-
+<ar:Catch runat="server" />
 <ar:ContentInfo runat="server" />
 </div>

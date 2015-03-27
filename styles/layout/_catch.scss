@@ -1,0 +1,76 @@
+$catch-color: $tertiary-color;
+$catch-button-color: $button-bg-color;
+
+.catch {
+	background-color: $catch-color;
+	border-bottom: 10px solid lighten($catch-color, 10);
+	padding: rem-calc(20);
+}
+
+.catch-button, .catch-vs, .catch-phone {
+	text-align: center;
+}
+
+.catch-button {
+	@extend .columns;
+	@extend .small-12;
+	@extend .medium-5;
+	.button {
+		@include button($catch-button-color);
+		border-bottom: 10px solid darken($catch-button-color, 20);	
+		margin: 0; 
+	}
+}
+
+.catch-vs {
+	@extend .columns;
+	@extend .small-12;
+	@extend .medium-2;
+	div {
+		font-size: rem-calc(22);
+		font-weight: bold;
+		color: white;
+	}
+}
+
+.catch-phone {
+	@extend .columns;
+	@extend .small-12;
+	@extend .medium-5;
+	a, a:hover, a:focus, a:visited {
+		color: white;
+	}
+	div {
+		font-size: rem-calc(28);
+		font-weight: bold;
+		color: white;
+	}
+}
+
+@media #{$medium-up} {
+	.catch {
+		padding: 0;
+	}
+	.catch-wrap {
+		height: 110px;
+	}
+	.catch-button {		
+		text-align: right;	
+	}
+	.catch-vs {
+		text-align: center;
+	}
+	.catch-phone {
+		text-align: left;
+	}
+	.catch-button, .catch-vs, .catch-phone {
+		padding: 0;
+		div {
+			position: relative;
+			top: 50%;
+			-webkit-transform: translateY(-50%);
+			-ms-transform: translateY(-50%);
+			transform: translateY(-50%);
+		}
+	}
+}

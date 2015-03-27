@@ -2,6 +2,7 @@
 <%@ Register TagPrefix="dnn" Namespace="DotNetNuke.Web.Client.ClientResourceManagement" Assembly="DotNetNuke.Web.Client" %>
 <%@ Register TagPrefix="avt" TagName="MyTokens" Src="~/DesktopModules/avt.MyTokens/SkinObjectReplacer.ascx" %>
 <%@ Register TagPrefix="ar" TagName="Banner" Src="inc/banner.ascx" %>
+<%@ Register TagPrefix="ar" TagName="Catch" Src="inc/catch.ascx" %>
 <%@ Register TagPrefix="ar" TagName="ContentInfo" Src="inc/contentinfo.ascx" %>
 
 <div class="page-template page-template-2-col">
@@ -15,6 +16,6 @@
   </div>
   <div id="BottomPane" class="bottom" runat="server"></div>
 </section>
-
+<ar:Catch runat="server" />
 <ar:ContentInfo runat="server" />
 </div>
