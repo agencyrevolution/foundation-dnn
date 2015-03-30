@@ -1,0 +1,24 @@
+<div class="slider-wrap">       
+  <div class="slider-main">
+  [*>NODE-TOP]
+  </div>
+</div>
+
+[>NODE-TOP]
+  <div class="slider-item">
+    <div class="row">
+      [?ENABLED]
+
+        <div class="slider-sidebar">
+          <div><a href="[=URL]"><h2>[=TEXT]</h2></a></div>
+        </div>
+        <div class="slider-image">
+          <div><a href="[=URL]"><img src="[=ICON]" alt="[=TEXT]"></a></div>
+        </div> 
+              
+      [?ELSE]
+        [=TEXT]
+      [/?]
+    </div>
+  </div>
+[/>]

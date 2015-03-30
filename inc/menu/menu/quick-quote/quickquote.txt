@@ -1,0 +1,10 @@
+
+[*>NODE-TOP]
+
+[>NODE-TOP]
+    [?ENABLED]
+      <option value="[=URL]">[=TEXT]</option>
+    [?ELSE]
+      [=TEXT]
+    [/?]
+[/>]

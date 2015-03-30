@@ -1,5 +1,4 @@
 .quotrr { overflow: hidden; }
-.state label { display: none; }
 
 .locator {
   input[type='text'],
@@ -25,7 +24,8 @@
 .address,
 .addressAdv,
 .email,
-.phone {
+.phone,
+.wq-box  {
   @extend .small-12;
   @extend .columns;
 }
@@ -46,8 +46,34 @@
 
 }
 
+.quotrr .wq-box {
+  label {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  span label {
+    display: none;
+  }
+}  
+
 .designation {
   font-size: 32px !important;
+}
+
+.fillme {
+  padding: 10px;
+  background-color: $alert-color;
+  margin-bottom: 10px;
+  label {
+    color: white;
+  }
+}
+
+span.fillme {
+  display: inline-block;
+  width: 100%;
+  color: white
 }
 
 .slider-quote {
