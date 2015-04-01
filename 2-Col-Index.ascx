@@ -1,6 +1,7 @@
 <%@ Control language="c#" AutoEventWireup="true" Explicit="True" Inherits="DotNetNuke.UI.Skins.Skin" %>
 <%@ Register TagPrefix="dnn" Namespace="DotNetNuke.Web.Client.ClientResourceManagement" Assembly="DotNetNuke.Web.Client" %>
 <%@ Register TagPrefix="avt" TagName="MyTokens" Src="~/DesktopModules/avt.MyTokens/SkinObjectReplacer.ascx" %>
+<%@ Register TagPrefix="dnn" TagName="Menu" src="~/DesktopModules/DDRMenu/Menu.ascx" %>
 <%@ Register TagPrefix="ar" TagName="Banner" Src="inc/banner.ascx" %>
 <%@ Register TagPrefix="ar" TagName="Catch" Src="inc/catch.ascx" %>
 <%@ Register TagPrefix="ar" TagName="ContentInfo" Src="inc/contentinfo.ascx" %>
@@ -8,16 +9,17 @@
 <div class="page-template page-template-index page-template-2-col">
 <ar:Banner runat="server" />
 
-<section class="homepage-hero" style="background-image:url('');background-size:cover;background-position:center center;">
+<section class="homepage-hero" style="background-image:url('/Portals/devolution/images/featured-businessowner2.jpg');background-size:cover;background-position:center center;">
   <div class="row full-width">
+    <div class="homepage-hero-content">&nbsp;</div>
     <div class="homepage-hero-sidebar">
 
       <div class="quick-quote row">
-      <h2>Let Us Protect<br> What <span>Matters Most</span></h2>
+      <h2>Trust Us To Protect Your Business</h2>
           <div class="qq-col">
-              <select id="e_1" class="e_1"> 
-              <dnn:MENU MenuStyle="inc/menu/quickquote" IncludeNodes="#QuoteSelect" id="QuickQuoteMenu" runat='server'/></dnn:MENU>
-          </select>
+            <select id="e_1" class="e_1"> 
+              <dnn:MENU MenuStyle="inc/menu/quick-quote" IncludeNodes="#QuoteSelect" id="QuickQuoteMenu" runat="server"></dnn:MENU>
+            </select>
           </div>
           <div class="qq-col2">
               <input id="e_2" class="e_2 hint" maxlength="5" value="Zip Code" type="text">
@@ -46,7 +48,7 @@
       </div>
 
     </div>
-    <div class="homepage-hero-content"></div>
+    
   </div>
 </section>
 
@@ -58,8 +60,8 @@
 </section>
 
 <section class="secondary-hero">
-  <div class="row full-width">
-    
+  <div class="row">
+    <dnn:MENU MenuStyle="inc/menu/secondary-hero" IncludeNodes="#SecondaryHero" id="SecondaryHero" runat="server"></dnn:MENU>
   </div>
 </section>
 

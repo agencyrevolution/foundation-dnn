@@ -10,7 +10,7 @@
 				Get a quote today!
 			</div>
 			<div class="catch-button">
-				<a href="/personal" class="button">Start Now</a>
+				<a href="/personal" class="button"><i class="fa fa-check"></i> Start Now</a>
 			</div>
 			<div class="catch-vs">
 				<div class="vs-content">or</div>

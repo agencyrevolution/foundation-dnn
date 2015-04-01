@@ -1,0 +1,92 @@
+$catch-color: $warning-color;
+
+.catch {
+	background-color: $catch-color;
+	font-family: $fancy-font;
+	color: white;
+	padding-top: rem-calc(40);
+	padding-bottom: rem-calc(40);
+	line-height: 1.2;
+}
+
+.catch-wait {
+	font-size: rem-calc(30);
+	font-family: $body-font-family;
+	text-align: left;
+	h3 {
+		font-size: rem-calc(48);
+		color: white;
+		margin: 0;
+		padding: 0;
+	}
+}
+.catch-content {
+	text-align: center;
+	@extend .small-12;
+	@extend .columns;
+}
+.catch-wait, .catch-button, .catch-call, .catch-vs {
+	display: inline-block;
+	vertical-align: middle;
+	padding: 0 rem-calc(10);
+}
+.catch-button {
+	text-align: center;
+	.button {
+		@include button(rem-calc(16), lighten($catch-color, 8));
+		margin: 0;
+	}	
+}
+.catch-vs {
+	text-align: center;
+}
+.catch-call {
+	text-align: center;
+	font-size: rem-calc(24);
+	span {
+		font-size: rem-calc(30);
+	}
+}
+.vs-content {
+	font-size: rem-calc(30);
+	font-weight: bold;
+	font-style: italic;
+}
+
+
+@media #{$small-only} {
+	.catch-wait {
+		text-align: center;
+		padding-bottom: rem-calc(20);
+	}
+	.catch-wait, .catch-button, .catch-call, .catch-vs {
+		display: block !important;
+	}
+}
+
+@media #{$medium-only} {
+	.catch-wait, .catch-button, .catch-call, .catch-vs {
+		display: inline-block;
+		vertical-align: middle;
+		padding: 0 rem-calc(6);
+	}
+	.catch-wait  {
+		padding-right: rem-calc(15) !important;
+		font-size: rem-calc(24);
+		h3 {
+			font-size: rem-calc(32);
+		}
+	}
+	.catch-call {
+		font-size: rem-calc(20);
+		span {
+			font-size: rem-calc(22);
+		}
+	}
+}
+
+@media #{$large-up} {
+	.catch-wait {
+		padding-right: rem-calc(40) !important;
+	}
+}

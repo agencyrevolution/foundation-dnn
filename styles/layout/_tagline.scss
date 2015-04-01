@@ -1,0 +1,27 @@
+$tagline-color: $primary-color;
+
+.tagline {
+	background-color: $tagline-color;
+	@extend .common-padding; //see base.scss
+	.tagline-sidebar {
+		@extend .columns;
+		@extend .medium-4;
+		@extend .make-it-white; //see base.scss
+	}
+	.tagline-content {
+		@extend .columns;
+		@extend .medium-8;
+		@extend .make-it-white; //see base.scss
+	}
+	.button {
+		@include button(rem-calc(16), lighten($tagline-color, 12));
+		margin: 0;
+	}
+
+}
+
+@media #{$small-only} {
+	.tagline-content {
+		padding-top: rem-calc(30);
+	}
+}

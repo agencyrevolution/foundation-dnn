@@ -1,0 +1,137 @@
+$quickquote-color: $primary-color;
+$quickquote-button-color: $warning-color;
+
+.homepage-hero {
+	background-color: $quickquote-color;
+}
+
+.homepage-hero-sidebar {
+	@extend .medium-5;
+    @extend .columns;
+    background-color: rgba(black, .6);
+}
+
+.homepage-hero-content {
+	@extend .medium-7;
+    @extend .columns;
+}
+
+.slider-wrap {
+	position: absolute;
+	width: 100%;
+	.slider-image{
+		width: 100%;
+		height: 200px;
+		background-position: center center;
+		background-color: transparent;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+}
+
+.quick-quote {
+	margin: 0;
+	padding: rem-calc(100) rem-calc(45)!important;
+
+	// padding: rem-calc(35);
+	h2, p {
+		color: white;
+	}
+	h2 {
+		@extend .common-shadow; //see base.scss
+		font-size: rem-calc(58);
+		line-height: 1;
+		margin: 0 0 rem-calc(25) 0;
+		span {
+			color: $secondary-color;
+		}
+	}
+	p {
+		line-height: 1.2;
+		margin: 0 0 rem-calc(10) 0;
+		font-family: $fancy-font;
+	}
+	.qq-col {
+		@extend .columns;
+		@extend .small-12;
+		@extend .medium-12;
+		@extend .large-5;
+		select {
+			font-size: 16px;
+		}
+	}
+	.qq-col2 {
+		@extend .columns;
+		@extend .small-12;
+		@extend .medium-12;
+		@extend .large-5;
+		input {
+			text-align: center;
+			color: #777;
+			font-size: 16px;
+		}		
+	}
+	.qq-col3 {
+		@extend .columns;
+		@extend .small-12;
+		@extend .medium-12;
+		@extend .large-2;
+		.button {
+			@include button(10, $quickquote-button-color);
+			font-size: rem-calc(30);
+			margin-bottom: 0;
+			line-height: 1;
+		}
+	}
+	select, input, .button {
+		height: 60px;
+	}
+}
+
+@media #{$small-only} {
+	.homepage-hero-content {
+		display: none;
+	}
+	.quick-quote {
+		padding: rem-calc(60) rem-calc(20)!important;
+		h2 {
+			font-size: rem-calc(52);
+		}
+	}
+	.qq-col, .qq-col2, .qq-col3 {
+		padding: 0 !important;
+	}
+}
+
+@media #{$medium-only} {	
+	.quick-quote {
+		padding: rem-calc(45) rem-calc(34)!important;
+		h2 {
+			font-size: rem-calc(38);
+		}
+	}
+	.qq-col, .qq-col2, .qq-col3 {
+		padding: 0 !important;
+	}
+}
+
+@media #{$medium-up} {
+	.homepage-hero-sidebar {
+		padding: 0;
+	}
+}
+
+@media #{$large-up} {
+	.qq-col {
+		padding-left: 0 !important;
+	}
+	.qq-col2 {
+		padding-left: 0 !important;
+	}
+	.qq-col3 {
+		padding: 0 !important;
+		.button {
+			max-width: 60px !important;
+		}
+	}
+}

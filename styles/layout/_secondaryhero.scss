@@ -1,0 +1,35 @@
+$secondary-hero-color: lighten($tertiary-color, 45);
+
+.secondary-hero {
+	background-color: $secondary-hero-color;
+	padding-top: rem-calc(40);
+  padding-bottom: rem-calc(10);
+	text-align: left;
+	border-bottom: 1px solid darken($secondary-hero-color, 10);
+	.item-frame {
+		width: 100%;
+		text-align: center;
+		height: 120px;
+	}
+	.item-image {
+		max-height: 110px;
+	  max-width: 140px;
+	}
+	.item {
+		padding-left: rem-calc(15);
+		padding-right: rem-calc(15);
+	}
+	h3 {
+		font-weight: normal;
+	}
+}
+
+@media #{$large-up} {
+	.secondary-hero {
+		.item {
+			text-align: center;
+			padding-left: rem-calc(0);
+			padding-right: rem-calc(0);
+		}
+	}
+}
