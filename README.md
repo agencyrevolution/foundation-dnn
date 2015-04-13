@@ -24,6 +24,8 @@ sudo ./npm-preen
 
 # Start hacking
 gulp dev
+# or
+gulp build-watch
 ```
 
 ## Custom Theme
