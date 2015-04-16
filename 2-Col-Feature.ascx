@@ -7,12 +7,11 @@
 <div class="page-template page-template-feature page-template-2-col">
 <ar:Banner runat="server" />
 
-<section class="feature-wrap primary-color" style="background-image: url(<avt:MyTokens runat='server' Token='[Tab:Iconfilelarge]' />)">
+<section class="feature-wrap primary-color" style="background-image: url(<avt:MyTokens runat='server' Token='[Tab:Iconfilelarge]' />?dw=1200&tw=1000&mw=800)">
   <div class="feature-wrap-color"></div>
   <div class="row">
     <div class="small-12 columns text-center">
-      <h1><%= PortalSettings.ActiveTab.TabName %></h1>
-      <h3 class="subheader"><%= PortalSettings.ActiveTab.Description %></h3>
+      <h1 class="feature-h1"><%= PortalSettings.ActiveTab.TabName %></h1>
       <div id="FeaturePane" class="feature" runat="server"></div>
     </div>
   </div>

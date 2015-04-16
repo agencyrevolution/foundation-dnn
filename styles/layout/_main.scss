@@ -23,6 +23,177 @@
     width: 100px;
   }
 
+  .niches,
+  .inner-icons {
+    li {
+      text-align: center;
+    }
+  }
+
+  .inner-icons {
+    li {
+      position: relative;
+      min-height: 170px;
+      margin-top: 30px;
+    }
+    img {
+      max-height: 125px;
+      max-width: 125px;
+      &:not([src*="/"]) {
+        visibility: hidden;
+      }
+    }
+    p {
+      position: absolute;
+      bottom: 0;
+      width: 85%;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+  }
+
+  $puzzle-border-color: $cyan;
+  $puzzle-left-border-color: $green;
+  $puzzle-right-border-color: $blue;
+
+  .puzzle {
+    li a {
+      background-repeat: no-repeat;
+      background-position: 50% 30%;
+      background-size: 130px;
+      padding: 2em;
+      border-color: $puzzle-border-color;
+      border-width: 3px;
+      border-style: solid;
+      box-shadow: none;
+      height: 230px;
+      margin: 1em 0;
+      width: 230px;
+      position: relative;
+
+      p {
+        font-size: rem-calc(20) !important;
+        position: absolute;
+        bottom: 1em;
+        width: 100%;
+        left: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding: 0 .25em;
+      }
+
+      &:before,
+      &:after {
+        content: '';
+        position: absolute;
+        top: 70px;
+        border-color: $puzzle-border-color;
+        border-width: 3px;
+        border-style: solid;
+        background-color: #fff;
+        height: 80px;
+        width: 25px;
+      }
+
+      &:before {
+        left: -25px;
+        border-right-width: 0px;
+      }
+
+      &:after {
+        right: -25px;
+        border-left-width: 0px;
+      }
+    }
+
+    li:nth-child(5n+1) a {
+      &,
+      &:before,
+      &:after {
+        border-color: $puzzle-left-border-color;
+      }
+      &:before {
+        bottom: -52px;
+        transform: rotate(-90deg);
+        left: 45%;
+        top: auto;
+      }
+      &:after {
+        right: -3px;
+        transform: rotate(-180deg);
+      }
+    }
+
+    li:nth-child(5n+3) a {
+      &,
+      &:before,
+      &:after {
+        border-color: $puzzle-right-border-color;
+      }
+      &:before {
+        left: -3px;
+        transform: rotate(-180deg);
+      }
+      &:after {
+        display: none;
+        bottom: -52px;
+        transform: rotate(90deg);
+        left: 45%;
+        top: auto;
+      }
+    }
+
+    li:nth-child(5n+4) a {
+      &,
+      &:before,
+      &:after {
+        border-color: $orange;
+      }
+      &:before {
+        transform: rotate(-90deg);
+        left: 45%;
+        top: -31px;
+      }
+      &:after {
+        right: -3px;
+        transform: rotate(-180deg);
+      }
+    }
+
+    li:nth-child(5n+5) a {
+      &:after {
+        display: none;
+      }
+
+    }
+
+    .Emergency.Claims a {
+      &,
+      &:before,
+      &:after {
+        border-color: darken($white, 15%) !important;
+      }
+    }
+
+    .Companies.Represent {
+      p {
+        display: none;
+      }
+      a {
+        background-position: 50% !important;
+      }
+    }
+
+  }
+
+}
+
+.page-icon-image {
+  max-height: 190px;
+  max-width: 170px;
+  padding-bottom: 20px;
 }
 
 @media #{$medium-up} {

@@ -47,28 +47,37 @@ $js    : '#{$root}js/';
 // We use these to control various global styles
 // $body-bg: #fff;
 // $body-font-color: #222;
-$body-font-family: 'Helvetica', Helvetica, Arial, sans-serif;
+$body-font-family: 'Aller', 'Helvetica', Helvetica, Arial, sans-serif;
 // $body-font-weight: normal;
 // $body-font-style: normal;
 
 // We use this to control font-smoothing
-// $font-smoothing: antialiased;
+$font-smoothing: antialiased;
 
 // We use these to control text direction settings
 // $text-direction: ltr;
 // $opposite-direction: right;
 // $default-float: left;
 
+$green: #9fd15a;
+$cyan: #00a0dc;
+$blue: #006681;
+$dark-blue: #003e50;
+$orange: #ff7c34;
+$red: #ff3754;
+$grey: #424242;
+$light-grey: #727067;
+
 // We use these as default colors throughout
-// $primary-color: #008cba;
-// $secondary-color: #006887;
+$primary-color: $cyan;
+$secondary-color: $green;
 // $alert-color: #f44323;
-// $success-color: #36cdc4;
+$success-color: $green;
 // $warning-color: #f08a24;
 // $info-color: #a0d3e8;
 
 // We use these to make sure border radius matches unless we want it different.
-// $global-radius: 3px;
+$global-radius: 5px;
 // $global-rounded: 1000px;
 
 // We use these to control inset shadow shiny edges and depressions.
@@ -211,6 +220,41 @@ $medium-range: (40.063em, 64.5em);
 // Button Groups
 
 // $include-html-button-classes: $include-html-classes;
+
+// $button-med: rem-calc(12);
+// $button-tny: rem-calc(7);
+// $button-sml: rem-calc(9);
+// $button-lrg: rem-calc(16);
+
+// We use this to control the display property.
+// $button-display: inline-block;
+// $button-margin-bottom: rem-calc(20);
+
+// We use these to control button text styles.
+// $button-font-family: inherit;
+// $button-font-color: #fff;
+// $button-font-color-alt: #333;
+// $button-font-med: rem-calc(16);
+// $button-font-tny: rem-calc(11);
+// $button-font-sml: rem-calc(13);
+// $button-font-lrg: rem-calc(20);
+// $button-font-weight: bold;
+// $button-font-align: center;
+
+// We use these to control various hover effects.
+// $button-function-factor: 10%;
+
+// We use these to control button border styles.
+// $button-border-width: 1px;
+// $button-border-style: solid;
+
+// We use this to set the default radius used throughout the core.
+$button-radius: $global-radius;
+// $button-round: $global-rounded;
+
+// We use this to set default opacity and cursor for disabled buttons.
+// $button-disabled-opacity: 0.6;
+// $button-disabled-cursor: $cursor-default-value;
 
 // Sets the margin for the right side by default, and the left margin if right-to-left direction is used
 // $button-bar-margin-opposite: rem-calc(10);
@@ -508,21 +552,28 @@ $medium-range: (40.063em, 64.5em);
 // $tabbar-header-margin: 0;
 
 // Off Canvas Menu Variables
-// $off-canvas-width: 250px;
-// $off-canvas-bg: #fff;
+$off-canvas-width: 250px;
+$off-canvas-bg: $primary-color;
 
 // Off Canvas Menu List Variables
-// $off-canvas-label-padding: 0.3rem rem-calc(15);
-// $off-canvas-label-color: #444;
-// $off-canvas-label-text-transform: uppercase;
-// $off-canvas-label-font-weight: bold;
-// $off-canvas-label-bg: darken($off-canvas-bg, 5%);
-// $off-canvas-label-border-top: none;
-// $off-canvas-label-border-bottom: 1px solid darken($off-canvas-label-bg, 5%);
-// $off-canvas-label-margin:0;
-// $off-canvas-link-padding: rem-calc(10, 15);
-// $off-canvas-link-color: rgba(#444, 0.7);
-// $off-canvas-link-border-bottom: none;
+$off-canvas-label-padding: 0;
+$off-canvas-label-color: #fff;
+$off-canvas-label-text-transform: none;
+$off-canvas-label-font-size: rem-calc(22) !default;
+$off-canvas-label-font-weight: normal;
+$off-canvas-label-bg: $off-canvas-bg;
+$off-canvas-label-border-top: none;
+$off-canvas-label-border-bottom: none;
+// $off-canvas-label-margin: 0;
+$off-canvas-link-padding: 0;
+$off-canvas-link-color: $off-canvas-label-color;
+$off-canvas-link-border-bottom: none;
+// $off-canvas-back-bg: #444 !default;
+// $off-canvas-back-border-top: $off-canvas-label-border-top !default;
+// $off-canvas-back-border-bottom: $off-canvas-label-border-bottom !default;
+// $off-canvas-back-hover-bg: scale-color($off-canvas-back-bg, $lightness: -30%) !default;
+// $off-canvas-back-hover-border-top: 1px solid scale-color($off-canvas-label-bg, $lightness: 14%) !default;
+// $off-canvas-back-hover-border-bottom: none !default;
 
 // Off Canvas Menu Icon Variables
 // $tabbar-menu-icon-color: red;
@@ -541,12 +592,12 @@ $medium-range: (40.063em, 64.5em);
 // Off Canvas Back-Link Overlay
 // $off-canvas-overlay-transition: background 0.3s ease;
 // $off-canvas-overlay-cursor: pointer;
-// $off-canvas-overlay-box-shadow: -4px 0 4px rgba(#444, 0.5), 4px 0 4px rgba(#444, 0.5);
-// $off-canvas-overlay-background: rgba(#FFF, 0.2);
+// $off-canvas-overlay-box-shadow: -4px 0 4px rgba(#444, .5), 4px 0 4px rgba(#444, .5);
+$off-canvas-overlay-background: rgba(#FFF, 0);
 // $off-canvas-overlay-background-hover: rgba(#FFF, 0.05);
 
 // Transition Variabls
-// $menu-slide: 'transform 0.3s ease';
+$menu-slide: "transform 0.218s cubic-bezier(.4, 0, .2, 1) 0s" !default;
 
 // Slick
 
@@ -988,7 +1039,7 @@ $topbar-media-query: 'only screen and (min-width: #{upper-bound($medium-range)})
 // $include-html-type-classes: $include-html-classes;
 
 // We use these to control header font styles
-$header-font-family: 'Helvetica', Helvetica, Arial, sans-serif;
+$header-font-family: 'Aller', 'Helvetica', Helvetica, Arial, sans-serif;
 // $header-font-weight: bold;
 // $header-font-style: normal;
 // $header-font-color: #222;
@@ -1017,7 +1068,7 @@ $header-font-family: 'Helvetica', Helvetica, Arial, sans-serif;
 // $small-font-color: scale-color($header-font-color, $lightness: 35%);
 
 // We use these to style paragraphs
-// $paragraph-font-family: inherit;
+$paragraph-font-family: $header-font-family;
 // $paragraph-font-weight: normal;
 // $paragraph-font-size: 1rem;
 // $paragraph-line-height: 1.6;
@@ -1034,8 +1085,8 @@ $header-font-family: 'Helvetica', Helvetica, Arial, sans-serif;
 
 // We use these to style anchors
 // $anchor-text-decoration: none;
-// $anchor-font-color: $primary-color;
-// $anchor-font-color-hover: scale-color($primary-color, $lightness: -14%);
+$anchor-font-color: $primary-color;
+$anchor-font-color-hover: scale-color($primary-color, $lightness: -14%);
 
 // We use these to style the hr element
 // $hr-border-width: 1px;

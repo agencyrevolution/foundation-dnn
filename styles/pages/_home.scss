@@ -1,0 +1,29 @@
+.home {
+
+  .feature-wrap {
+    height: 50vh;
+    position: relative;
+
+    @media #{$medium-up} {
+      height: 50vh;
+      min-height: 500px;
+    }
+
+    .columns { padding: 0 !important; }
+
+    h1,
+    h3 { color: $primary-color; }
+
+
+  }
+
+  h2 em {
+    color: $green;
+    font-style: normal;
+  }
+
+  .feature-wrap-color {
+    background-image: linear-gradient(top, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .1) 50%) !important;
+  }
+
+}

@@ -1,6 +1,6 @@
 // DotNetNuke
 .dnnEditState .DnnModule { opacity: 1 !important; }
-.DNNEmptyPane { display: none !important; }
+.DNNEmptyPane, [id*="Default_List_placeholderActions"] { display: none !important; }
 .dnnSortable { &.ui-sortable, &.ui-droppable { padding: inherit; } }
 .aside { .ModRevMoonRayFormC, .dnnFormAndList { background-color: white; } }
 
@@ -40,8 +40,27 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-a.button {
-  &, &:hover, &:visited, &:focus, &:active {
-    color: white;
+.button {
+  &,
+  &:hover,
+  &:visited,
+  &:focus,
+  &:active {
+    color: #fff;
   }
+}
+
+button.warning,
+.button.warning,
+.warning.pusher {
+  background-color: $orange;
+  border: 0;
+  box-shadow: #fff 0 3px 0;
+}
+
+buton,
+.button,
+.pusher {
+  font-size: rem-calc(22) !important;
+  padding: .75em 2em;
 }

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="411px" height="176px" viewBox="0 0 411 176" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>Rectangle 296</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.35 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Desktop" sketch:type="MSArtboardGroup" transform="translate(-330.000000, -259.000000)" filter="url(#filter-1)" fill="#FFFFFF">
+            <path d="M346.662043,294.820255 C347.400976,292.158102 350.216966,289.699003 352.960212,289.330542 C352.960212,289.330542 684.153264,243.852223 720,270 C755.846736,296.147777 721.534847,396.236276 721.534847,396.236276 C720.687174,398.867208 717.781641,401.308647 715.04472,401.685405 C715.04472,401.685405 378.383641,449.055073 348,421 C317.616359,392.944927 346.662043,294.820255 346.662043,294.820255 Z" id="Rectangle-296" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

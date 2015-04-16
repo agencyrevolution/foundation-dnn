@@ -1,0 +1,15 @@
+<ul class="niches small-block-grid-1 medium-block-grid-2 large-block-grid-3">
+  [*>NODE-TOP]
+</ul>
+
+[>NODE-TOP]
+  <li class="[=TEXT]">
+    [?ENABLED]
+      <a class="niche th [?SELECTED] current[/?]" href="[=URL]" style="background-image:url('[=ICON]');">
+        <p>[=TEXT]</p>
+      </a>
+    [?ELSE]
+      <p>[=TEXT]</p>
+    [/?]
+  </li>
+[/>]

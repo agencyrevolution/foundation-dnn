@@ -29,3 +29,13 @@ else
   mv node_modules/slick-carousel/slick styles/vendor/slick
   rm -rf node_modules/slick-carousel
 fi
+
+mkdir -p scripts/vendor/svg-injector
+if mv node_modules/svg-injector/dist scripts/vendor/svg-injector; then
+  rm -rf node_modules/svg-injector
+else
+  rm -rf scripts/vendor/svg-injector
+  mkdir -p scripts/vendor/svg-injector
+  mv node_modules/svg-injector/dist scripts/vendor/svg-injector
+  rm -rf node_modules/svg-injector
+fi

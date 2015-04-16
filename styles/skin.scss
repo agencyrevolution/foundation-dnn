@@ -1,6 +1,8 @@
 // Make sure the charset is set appropriately
 @charset 'UTF-8';
 
+@import '../../fonts/aller.css';
+
 // @import 'normalize';
 
 @import 'settings';
@@ -32,7 +34,7 @@
 // 'foundation/components/progress-bars',
 // 'foundation/components/range-slider',
 'foundation/components/reveal',
-// 'foundation/components/side-nav',
+'foundation/components/side-nav',
 'foundation/components/split-buttons',
 // 'foundation/components/sub-nav',
 // 'foundation/components/switches',
@@ -40,9 +42,9 @@
 'foundation/components/tabs',
 'foundation/components/thumbs',
 'foundation/components/tooltips',
-'foundation/components/top-bar',
+// 'foundation/components/top-bar',
 'foundation/components/type',
-// 'foundation/components/offcanvas',
+'foundation/components/offcanvas',
 'foundation/components/visibility';
 
 @import 'utility-belt';
@@ -50,6 +52,7 @@
 
 @import 'layout/base';
 @import 'pages/errors';
+@import 'pages/home';
 @import 'pages/2-col';
 @import 'pages/2-col-feature';
 @import 'pages/2-col-feature-small';

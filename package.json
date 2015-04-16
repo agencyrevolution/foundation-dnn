@@ -17,7 +17,9 @@
     "gulp": "~3.8.11"
   },
   "dependencies": {
+    "jquery-mobile": "^1.4.1",
     "slick-carousel": "~1.4.1",
+    "svg-injector": "^1.1.2",
     "utility-belt": "stephenway/utility-belt",
     "zurb-foundation-5": "~5.4.7"
   },

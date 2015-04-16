@@ -1,0 +1,16 @@
+<ul class="inner-icons small-block-grid-2 medium-block-grid-3 large-block-grid-6">
+  [*>NODE-TOP]
+</ul>
+
+[>NODE-TOP]
+  <li class="[=TEXT]">
+    [?ENABLED]
+      <a class="icon [?SELECTED] current[/?]" href="[=URL]">
+        <img src="[=ICON]?dw=125&tw=125&mw=125" alt="[=TEXT]">
+        <p>[=TEXT]</p>
+      </a>
+    [?ELSE]
+      <p>[=TEXT]</p>
+    [/?]
+  </li>
+[/>]

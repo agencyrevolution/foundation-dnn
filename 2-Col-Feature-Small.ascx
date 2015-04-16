@@ -13,7 +13,7 @@
     <div id="AsidePane" class="aside" role="complementary" runat="server"></div>
     <div  class="content" >
 
-      <div class="feature-wrap-small primary-color" style="background-image: url(<avt:MyTokens runat='server' Token='[Tab:Iconfilelarge]' />)">
+      <div class="feature-wrap-small primary-color" style="background-image: url(<avt:MyTokens runat='server' Token='[Tab:Iconfilelarge]' />?dw=800&tw=600&mw=600)">
         <div class="feature-wrap-color"></div>
         <div class="row">
           <div class="small-12 columns feature-content">

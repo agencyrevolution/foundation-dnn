@@ -1,0 +1,36 @@
+@font-face {
+  font-family: 'Aller';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Aller-Light'), local('Aller-Light'), url(aller/aller-light.woff) format('woff');
+}
+@font-face {
+  font-family: 'Aller';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Aller'), local('Aller'), url(aller/aller.woff) format('woff');
+}
+@font-face {
+  font-family: 'Aller';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Aller-Bold'), local('Aller-Bold'), url(aller/aller-bold.woff) format('woff');
+}
+@font-face {
+  font-family: 'Aller';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Aller-Light-Italic'), local('Aller-Light-Italic'), url(aller/aller-light-italic.woff) format('woff');
+}
+@font-face {
+  font-family: 'Aller';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Aller-Italic'), local('Aller-Italic'), url(aller/aller-italic.woff) format('woff');
+}
+@font-face {
+  font-family: 'Aller';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Aller-Bold-Italic'), local('Aller-Bold-Italic'), url(aller/aller-bold-italic.woff) format('woff');
+}

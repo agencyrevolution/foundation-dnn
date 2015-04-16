@@ -1,3 +1,22 @@
+input[type="text"] {
+  font-size: rem-calc(24);
+  padding: 1.2em 1em;
+  border: none;
+  box-shadow: rgba(0, 0, 0, .5) 0 2px 3px;
+  border-bottom: 3px solid $orange;
+  transition-duration: .218s;
+
+  &:focus {
+    background-color: #fff;
+    border-bottom-color: $green;
+    box-shadow: rgba(0, 0, 0, .5) 0 2px 3px;
+  }
+}
+
+::-webkit-input-placeholder {
+  color: #666;
+}
+
 .quotrr { overflow: hidden; }
 .state label { display: none; }
 
