@@ -6,7 +6,7 @@ if mv node_modules/zurb-foundation-5/scss styles/vendor/foundation; then
 else
   rm -rf styles/vendor/foundation
   mkdir styles/vendor/foundation
-  mv -p node_modules/zurb-foundation-5/scss styles/vendor/foundation
+  mv node_modules/zurb-foundation-5/scss styles/vendor/foundation
   rm -rf node_modules/zurb-foundation-5
 fi
 
