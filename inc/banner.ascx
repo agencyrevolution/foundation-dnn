@@ -11,8 +11,8 @@
 <fortyfingers:STYLEHELPER ID="SH2" RemoveCssFile="portal.css"  runat="server" />
 
 <ar:Init runat='server'/>
-<dnn:DnnCssInclude runat="server" FilePath="dist/css/skin.css" PathNameAlias="SkinPath" ForceProvider="DnnPageHeaderProvider" Priority="6" />
-<dnn:DnnJsInclude runat="server" FilePath="dist/js/skin.js" PathNameAlias="SkinPath" ForceProvider="DnnFormBottomProvider" Priority="4" />
+<dnn:DnnCssInclude runat="server" FilePath="dist/css/skin.min.css" PathNameAlias="SkinPath" ForceProvider="DnnPageHeaderProvider" Priority="6" />
+<dnn:DnnJsInclude runat="server" FilePath="dist/js/skin.min.js" PathNameAlias="SkinPath" ForceProvider="DnnFormBottomProvider" Priority="4" />
 <dnn:DnnJsInclude runat="server" FilePath="dist/js/jquery.mobile.min.js" PathNameAlias="SkinPath" ForceProvider="DnnFormBottomProvider" Priority="5" />
 <fnn:Offcanvas MenuNode="RootOnly" Align="right" runat="server" />
 

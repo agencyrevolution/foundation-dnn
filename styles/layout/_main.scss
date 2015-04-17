@@ -57,7 +57,7 @@
   $puzzle-left-border-color: $green;
   $puzzle-right-border-color: $blue;
 
-  .puzzle {
+  .niches {
     li a {
       background-repeat: no-repeat;
       background-position: 50% 30%;
@@ -71,6 +71,7 @@
       margin: 1em 0;
       width: 230px;
       position: relative;
+      border-radius: 8px;
 
       p {
         font-size: rem-calc(20) !important;
@@ -84,97 +85,22 @@
         padding: 0 .25em;
       }
 
-      &:before,
-      &:after {
-        content: '';
-        position: absolute;
-        top: 70px;
-        border-color: $puzzle-border-color;
-        border-width: 3px;
-        border-style: solid;
-        background-color: #fff;
-        height: 80px;
-        width: 25px;
-      }
-
-      &:before {
-        left: -25px;
-        border-right-width: 0px;
-      }
-
-      &:after {
-        right: -25px;
-        border-left-width: 0px;
-      }
     }
 
     li:nth-child(5n+1) a {
-      &,
-      &:before,
-      &:after {
-        border-color: $puzzle-left-border-color;
-      }
-      &:before {
-        bottom: -52px;
-        transform: rotate(-90deg);
-        left: 45%;
-        top: auto;
-      }
-      &:after {
-        right: -3px;
-        transform: rotate(-180deg);
-      }
+      border-color: $puzzle-left-border-color;
     }
 
     li:nth-child(5n+3) a {
-      &,
-      &:before,
-      &:after {
         border-color: $puzzle-right-border-color;
-      }
-      &:before {
-        left: -3px;
-        transform: rotate(-180deg);
-      }
-      &:after {
-        display: none;
-        bottom: -52px;
-        transform: rotate(90deg);
-        left: 45%;
-        top: auto;
-      }
     }
 
     li:nth-child(5n+4) a {
-      &,
-      &:before,
-      &:after {
         border-color: $orange;
-      }
-      &:before {
-        transform: rotate(-90deg);
-        left: 45%;
-        top: -31px;
-      }
-      &:after {
-        right: -3px;
-        transform: rotate(-180deg);
-      }
     }
 
-    li:nth-child(5n+5) a {
-      &:after {
-        display: none;
-      }
-
-    }
-
-    .Emergency.Claims a {
-      &,
-      &:before,
-      &:after {
+    .Claims a {
         border-color: darken($white, 15%) !important;
-      }
     }
 
     .Companies.Represent {
@@ -194,6 +120,10 @@
   max-height: 190px;
   max-width: 170px;
   padding-bottom: 20px;
+}
+
+.tagline-container {
+  margin: 3em 0;
 }
 
 @media #{$medium-up} {
