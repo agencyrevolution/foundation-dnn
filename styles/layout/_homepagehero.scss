@@ -1,8 +1,9 @@
+$homepage-hero-color: lighten($primary-color, 15);
 $quickquote-color: $primary-color;
 $quickquote-button-color: $warning-color;
 
 .homepage-hero {
-	background-color: $quickquote-color;
+	background-color: $homepage-hero-color;
 }
 
 .homepage-hero-sidebar {
@@ -17,17 +18,19 @@ $quickquote-button-color: $warning-color;
 }
 
 .slider-wrap {
-	position: absolute;
-	width: 100%;
-	.slider-image{
-		width: 100%;
-		height: 200px;
-		background-position: center center;
-		background-color: transparent;
-		background-repeat: no-repeat;
-		background-size: cover;
-	}
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  .slider-image{
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
+
 
 .quick-quote {
 	margin: 0;

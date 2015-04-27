@@ -4,7 +4,7 @@ $( document ).ready(function() {
   // Includes
   var reset = require('./reset.js');
   var foundation = require('./foundation.js');
-  // var slider = require('./slider.js');
+  var slider = require('./slider.js');
 
     // Disable Dynamic Font Size on Quote Form Headline
 	  $('h1', '.designation').removeAttr('style').replaceWith(function() {

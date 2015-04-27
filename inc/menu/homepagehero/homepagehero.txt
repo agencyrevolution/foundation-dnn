@@ -1,24 +1,16 @@
-<div class="slider-wrap">       
+<div class="slider-wrap">
   <div class="slider-main">
-  [*>NODE-TOP]
+    [*>NODE-TOP]
   </div>
 </div>
 
 [>NODE-TOP]
   <div class="slider-item">
-    <div class="row">
-      [?ENABLED]
-
-        <div class="slider-sidebar">
-          <div><a href="[=URL]"><h2>[=TEXT]</h2></a></div>
-        </div>
-        <div class="slider-image">
-          <div><a href="[=URL]"><img src="[=ICON]" alt="[=TEXT]"></a></div>
-        </div> 
-              
-      [?ELSE]
-        [=TEXT]
-      [/?]
-    </div>
+    [?ENABLED]
+      <div class="slider-image"style="background-image: url('[=LARGEIMAGE]')" data-equalizer-watch></div>
+    [?ELSE]
+      [=TEXT]
+    [/?]
   </div>
 [/>]
+

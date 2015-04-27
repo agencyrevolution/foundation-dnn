@@ -9,16 +9,18 @@
 <div class="page-template page-template-index page-template-2-col">
 <ar:Banner runat="server" />
 
-<section class="homepage-hero" style="background-image:url('/Portals/devolution/images/featured-businessowner2.jpg');background-size:cover;background-position:center center;">
-  <div class="row full-width">
+<section class="homepage-hero" data-equalizer>
+  
+  <div class="row full-width" >
+    <dnn:MENU MenuStyle="inc/menu/homepagehero" IncludeNodes="#HomepageHero" id="HomepageHero" runat="server"></dnn:MENU>
     <div class="homepage-hero-content">&nbsp;</div>
     <div class="homepage-hero-sidebar">
 
-      <div class="quick-quote row">
+      <div class="quick-quote row" data-equalizer-watch>
       <h2>Trust Us To Protect Your Business</h2>
           <div class="qq-col">
             <select id="e_1" class="e_1"> 
-              <dnn:MENU MenuStyle="inc/menu/quick-quote" IncludeNodes="#QuoteSelect" id="QuickQuoteMenu" runat="server"></dnn:MENU>
+              <dnn:MENU MenuStyle="inc/menu/quickquote" IncludeNodes="#QuoteSelect" id="QuickQuoteMenu" runat="server"></dnn:MENU>
             </select>
           </div>
           <div class="qq-col2">
@@ -61,7 +63,7 @@
 
 <section class="secondary-hero">
   <div class="row">
-    <dnn:MENU MenuStyle="inc/menu/secondary-hero" IncludeNodes="#SecondaryHero" id="SecondaryHero" runat="server"></dnn:MENU>
+    <dnn:MENU MenuStyle="inc/menu/secondaryhero" IncludeNodes="#SecondaryHero" id="SecondaryHero" runat="server"></dnn:MENU>
   </div>
 </section>
 
