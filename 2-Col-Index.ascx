@@ -11,13 +11,13 @@
 
 <section class="homepage-hero" data-equalizer>
   
-  <div class="row full-width" >
+  <div class="row full-width">
     <dnn:MENU MenuStyle="inc/menu/homepagehero" IncludeNodes="#HomepageHero" id="HomepageHero" runat="server"></dnn:MENU>
     <div class="homepage-hero-content">&nbsp;</div>
     <div class="homepage-hero-sidebar">
 
       <div class="quick-quote row" data-equalizer-watch>
-      <h2>Trust Us To Protect Your Business</h2>
+        <div id="QuickQuoteTitle" class="quick-quote-title" runat="server"></div>
           <div class="qq-col">
             <select id="e_1" class="e_1"> 
               <dnn:MENU MenuStyle="inc/menu/quickquote" IncludeNodes="#QuoteSelect" id="QuickQuoteMenu" runat="server"></dnn:MENU>
