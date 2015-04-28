@@ -13,7 +13,6 @@
   <div class="row">
     <div class="small-12 columns text-center">
       <h1><%= PortalSettings.ActiveTab.TabName %></h1>
-      <h3 class="subheader"><%= PortalSettings.ActiveTab.Description %></h3>
       <div id="FeaturePane" class="feature" runat="server"></div>
     </div>
   </div>
