@@ -7,6 +7,9 @@ $catch-color: $warning-color;
 	padding-top: rem-calc(40);
 	padding-bottom: rem-calc(40);
 	line-height: 1.2;
+	a {
+		color: white !important;
+	}
 }
 
 .catch-wait {
