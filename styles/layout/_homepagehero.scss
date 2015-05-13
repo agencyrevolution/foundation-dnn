@@ -35,8 +35,8 @@ $quickquote-button-color: $warning-color;
 .quick-quote {
 	margin: 0;
 	padding: rem-calc(100) rem-calc(45)!important;
-
-	// padding: rem-calc(35);
+	position: relative;
+	z-index: 2;
 	h2, p {
 		color: white;
 	}
