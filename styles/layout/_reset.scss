@@ -21,8 +21,9 @@
 }
 
 // Editor Controls
-html, body { overflow-x: hidden; }
-* { -webkit-overflow-scrolling: touch; }
+html, body.dnnEditState{
+  overflow-x: hidden;
+}
 
 // Content Editor
 [style] {
