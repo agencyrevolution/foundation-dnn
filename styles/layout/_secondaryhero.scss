@@ -3,7 +3,7 @@ $secondary-hero-color: lighten($tertiary-color, 45);
 .secondary-hero {
 	background-color: $secondary-hero-color;
 	padding-top: rem-calc(40);
-  padding-bottom: rem-calc(10);
+  	padding-bottom: rem-calc(10);
 	text-align: left;
 	border-bottom: 1px solid darken($secondary-hero-color, 10);
 	.item-frame {
@@ -21,6 +21,7 @@ $secondary-hero-color: lighten($tertiary-color, 45);
 	}
 	h3 {
 		font-weight: normal;
+		text-align: center;
 	}
 }
 
@@ -33,3 +34,4 @@ $secondary-hero-color: lighten($tertiary-color, 45);
 		}
 	}
 }
+
