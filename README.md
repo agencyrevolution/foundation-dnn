@@ -10,17 +10,8 @@
 ## Installation
 
 ```
-# Install devDependencies first time only
-sudo ./npm-install-global
-
-# Next time you only need to run this
-sudo ./npm-link
-
-# Install dependencies
-sudo npm install --production
-
-# Move necessary assets out of dependencies
-sudo ./npm-preen
+sudo npm i gulp -g
+sudo npm i --no-bin-links
 
 # Start hacking
 gulp dev
