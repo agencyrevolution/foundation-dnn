@@ -22,9 +22,9 @@
     "zurb-foundation-5": "~5.4.7"
   },
   "scripts": {
-    "preinstall": "./npm-link",
-    "postinstall": "./npm-preen",
-    "global": "./npm-install-global",
+    "preinstall": "scripts/npm-link",
+    "postinstall": "scripts/npm-preen",
+    "global": "scripts/npm-install-global",
     "clean": "sudo rm -rf dist .sass-cache"
   },
   "private": true
