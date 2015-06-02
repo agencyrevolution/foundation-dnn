@@ -10,8 +10,7 @@
 ## Installation
 
 ```
-sudo npm i gulp -g
-sudo npm i --no-bin-links
+sudo scripts/install
 
 # Start hacking
 gulp dev
