@@ -24,6 +24,7 @@
   "scripts": {
     "preinstall": "scripts/npm-link",
     "postinstall": "scripts/npm-preen",
+    "install": "scripts/install",
     "global": "scripts/npm-install-global",
     "clean": "sudo rm -rf dist .sass-cache"
   },
