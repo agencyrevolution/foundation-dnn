@@ -14,6 +14,7 @@
 sudo scripts/install
 
 # Re-install
+rm -rf node_modules
 npm i --no-bin-links
 
 # Start hacking
