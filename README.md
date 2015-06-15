@@ -10,7 +10,11 @@
 ## Installation
 
 ```
+# First Run
 sudo scripts/install
+
+# Re-install
+npm i --no-bin-links
 
 # Start hacking
 gulp dev
