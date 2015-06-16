@@ -47,6 +47,13 @@ git pull upstream master
 git push origin custom
 ```
 
+## Switching Themes
+
+``` shell
+git fetch
+git checkout branch-theme-name
+```
+
 ### Commands
 
 * `gulp dev` Watch the project for development
