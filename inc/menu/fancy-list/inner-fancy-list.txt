@@ -1,0 +1,16 @@
+<ul class="inner small-block-grid-2 medium-block-grid-3 large-block-grid-4">
+[*>NODE-TOP]
+</ul>
+
+[>NODE-TOP]
+  <li class="niche-grid-items">
+    [?ENABLED]
+        <a class="[?SELECTED] current[/?] niche-image" href="[=URL]" style="background-image:url('[=LARGEIMAGE]');">
+        </a>
+        <h6 class="grid-text">[=TEXT]</h6>
+      [?ELSE]
+    [=TEXT]
+  [/?]
+</li>
+[/>]
+    

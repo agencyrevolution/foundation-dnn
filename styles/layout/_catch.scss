@@ -1,0 +1,67 @@
+$catch-color: $primary-color;
+
+.catch {
+	background-color: $catch-color;
+	.catch-content {
+		@extend .small-12;
+		@extend .medium-12;
+		@extend .large-12;
+		@extend .columns;
+		text-align: center;
+		padding-top: rem-calc(20);
+		padding-bottom: rem-calc(20);
+		color: white;
+		.button {
+			@include button(rem-calc(16), lighten($catch-color, 16));
+			
+			font-weight: bold;
+		}
+		.catch-vs {
+			font-family: $fancy-font;
+			font-size: rem-calc(32);
+		}
+		.catch-phone {
+			font-family: $fancy-font;
+			font-size: rem-calc(36);
+			font-weight: bold;
+		}
+		a, a:hover, a:visited {
+			color: white;
+		}
+
+	}
+}
+
+@media #{$small-only} {
+	.catch {
+		.catch-content {
+			.button {
+				display: block;
+			}
+			.catch-phone {
+				padding: rem-calc(10);
+				font-size: rem-calc(32);
+				display: block;	
+			}
+		}
+	}
+
+}
+
+@media #{$medium-up} {
+	.catch {
+		.catch-content {
+			.catch-vs {
+				margin-left: rem-calc(20);
+
+			}
+			.catch-phone {
+				margin-left: rem-calc(15);
+				font-size: rem-calc(32);
+			}
+			.button {
+				margin-bottom: 0;
+			}
+		}
+	}
+}

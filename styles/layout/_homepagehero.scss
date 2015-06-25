@@ -1,0 +1,58 @@
+$homepage-hero-color: $primary-color;
+
+.homepage-hero {
+  	padding: 0;
+  	background-color: $homepage-hero-color;
+    background: radial-gradient(ellipse at center, lighten($homepage-hero-color, 20) 0%, $homepage-hero-color 150%);
+}
+
+.homepage-hero-sidebar {
+	@extend .medium-4;
+ 	@extend .columns;
+ 	@extend .make-it-white; //see base.scss
+ 	padding: rem-calc(30)  !important;
+ 	background-image: linear-gradient(280deg, rgba(0, 0, 0, 0.4) -100%, rgba(0, 0, 0, 0));
+ 	font-family: $fancy-font;
+}
+
+.homepage-hero-content {
+	@extend .medium-8;
+ 	@extend .columns;
+ 	@extend .make-it-white; //see base.scss
+ 	padding: rem-calc(30) !important;
+ 	font-family: $fancy-font;
+ 	.Normal, ul li {
+		color: white;
+		text-shadow: rgb(0, 0, 0) 0px 1px 0px;
+	}
+	ul {
+		padding: 0;
+	}
+	h1 {
+		font-size: rem-calc(64) !important;
+		line-height: 1 !important;
+		text-shadow: rgb(0, 0, 0) 0px 1px 0px;
+		border-bottom: 1px dotted lighten($primary-color, 60);
+		padding: 0 0 15px;
+		font-weight: bold;
+	}
+}
+
+.quickquote {
+	background-color: rgba(0, 0, 0, 0.5);
+	border: 0px solid $primary-color;
+	h3 {
+		font-size: rem-calc(32);
+	}
+}
+
+
+
+@media #{$medium-up} {
+	.homepage-hero-content  {
+		float: right;
+	}
+	.quickquote {
+		margin-bottom: 0;
+	}
+}

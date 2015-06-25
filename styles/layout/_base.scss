@@ -1,8 +1,64 @@
 // ----------------------------------------------------------------------------
 // Imports
 
-@import 'reset';
-@import 'banner';
-@import 'main';
-@import 'quote';
-@import 'contentinfo';
+@import "reset";
+@import "banner";
+@import "nav";
+@import "homepagehero";
+@import "main";
+@import "catch";
+@import "quote";
+@import "contentinfo";
+
+$base-color: lighten($quaternary-color, 8);
+
+// main shadow
+
+.content-shadow section > .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.content-shadow {
+  box-shadow: rgba(0, 0, 0, 0.1) 0 0 10px;
+}
+
+// main bg color
+
+.page-template {
+  background-color: $base-color;
+}
+
+.make-it-white {
+	color: white;
+	.Normal {
+		color: white;
+	}
+	h1, h2, h3, h4, h5, h6 {
+		color: white;
+	}
+	a, a:hover, a:visited {
+		color: white;
+	}
+}
+
+.super-heading {
+	font-size: 40px !important;
+}
+
+.niche-grid-items {
+	text-align: center;
+	.page-template-index & {
+		padding-bottom: 0;
+	}
+	h6 {
+		font-size: 18px;
+	}
+	.niche-image {
+		height: 92px;
+	  width: 100%;
+	  background-size: cover;
+	  display: block;
+	  background-position: center;
+	}
+}

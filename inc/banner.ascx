@@ -10,15 +10,36 @@
 <fortyfingers:STYLEHELPER ID="SH2" RemoveCssFile="portal.css"  runat="server" />
 
 <ar:Init runat='server'/>
-<dnn:DnnCssInclude runat="server" FilePath="dist/css/skin.css" PathNameAlias="SkinPath" ForceProvider="DnnPageHeaderProvider" Priority="6" />
+<dnn:DnnCssInclude runat="server" FilePath="dist/css/skin.min.css" PathNameAlias="SkinPath" ForceProvider="DnnPageHeaderProvider" Priority="6" />
+<dnn:DnnCssInclude runat="server" FilePath="plugins/font-awesome/css/font-awesome.min.css" PathNameAlias="SkinPath" ForceProvider="DnnPageHeaderProvider" Priority="10" />
 <dnn:DnnJsInclude runat="server" FilePath="dist/js/skin.js" PathNameAlias="SkinPath" ForceProvider="DnnFormBottomProvider" Priority="4" />
 
 <header role="banner">
-<div class="header-wrap">
-  <fnn:TopBar runat="server"
-    RightNode="*,0,2"
-    RightExcludes="Home,Admin,Revolution"
-    Hover="false"
-  />
-</div>
+	<div class="row">
+		<div class="header-wrap">
+			<div class="header-logo">
+				<dnn:LOGO runat="server" />
+			</div>
+			<div class="header-details ">
+				<div class="header-col ">
+					<div class="header-phone">
+						Call Us
+						<span itemprop="telephone"><avt:MyTokens runat="server" Token="[RevTemplate:Standard.LocalNumber]" /></span>
+					</div>
+					<div class="header-icon">
+						<i class="fa fa-phone"></i>
+					</div>
+				</div>
+				<div class="header-col hide-for-small">
+					<div class="header-hours">
+						Monday - Friday
+						<span>8:00am - 5:00pm</span>
+					</div>
+					<div class="header-icon">
+						<i class="fa fa-clock-o"></i>
+					</div>
+				</div>
+			</div>	
+		</div>
+	</div>
 </header>

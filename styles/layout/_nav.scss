@@ -1,0 +1,10 @@
+[role="nav"] {
+	ul.title-area .name a{
+		display: none;
+	}
+}
+
+@media #{$small-only} {}
+@media #{$medium-only} {}
+@media #{$medium-up} {}
+@media #{$large-up} {}

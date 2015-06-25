@@ -1,34 +1,50 @@
-[role='main'] {
-  .content {
+$main-color: $quaternary-color;
+$content-padding: 20px;
+
+[role="main"] {
+  background-color: white;
+  .content-wrap {
     @extend .medium-8;
     @extend .columns;
     min-height: 25em;
   }
 
-  .aside {
+  div.top, div.bottom{
+    @extend .small-12;
+    @extend .columns;  
+  }
+
+  div.top {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  div.bottom {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  h2, h3 {
+    .page-template-index & {
+      border-bottom: 1px dotted #bdcdc5;
+      padding: 0 0 15px;
+    } 
+  }
+  .aside-wrap {
     @extend .medium-4;
     @extend .columns;
     @extend .right;
-
+    .page-template-index & {
+      border-left: 1px solid rgba(0, 0, 0, 0.1);
+    }
     &.DNNEmptyPane + .content {
       @extend .medium-12;
-      border-right: 0;
-    }
-
-  }
-
-  // Half size HR
-  .half-rule {
-    margin: 40px auto;
-    width: 100px;
-  }
-
-}
-
-@media #{$medium-up} {
-  [role='main'] {
-    .aside {
-      padding-left: 20px;
+      border-right: none;
     }
   }
+  .aside-wrap, .content-wrap, div.top, div.bottom {
+    padding: $content-padding;
+  }
 }
+
+// Half size HR
+.half-rule { width: 100px; margin: 40px auto; }
+
+
