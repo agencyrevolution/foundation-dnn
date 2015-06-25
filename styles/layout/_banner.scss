@@ -13,6 +13,7 @@ $banner-color: desaturate($quaternary-color, 10);
     	@extend .medium-4;
     	@extend .small-12;
     	padding-left: 0;
+    	text-align: center;
 	}
 	.header-details {
 		@extend .columns;
@@ -24,6 +25,9 @@ $banner-color: desaturate($quaternary-color, 10);
 		color: darken($banner-color, 45);
 		font-size: rem-calc(28);
 		line-height: 1.2;
+		a, a:hover, a:visited {
+			color: darken($banner-color, 45);
+		}
 		span {
 			display: block;
 		}
