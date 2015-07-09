@@ -20,7 +20,7 @@ $quickquote-button-color: $warning-color;
 .slider-wrap {
   position: absolute;
   width: 100%;
-  height: 100%;
+  // height: 100%;
   .slider-image{
     width: 100%;
     height: 100%;
@@ -37,17 +37,14 @@ $quickquote-button-color: $warning-color;
 	padding: rem-calc(100) rem-calc(45)!important;
 	position: relative;
 	z-index: 2;
-	h2, p {
-		color: white;
-	}
+	.quick-quote-title {
+		@extend .make-it-white;
+ 	}
 	h2 {
 		@extend .common-shadow; //see base.scss
 		font-size: rem-calc(58);
 		line-height: 1;
 		margin: 0 0 rem-calc(25) 0;
-		span {
-			color: $secondary-color;
-		}
 	}
 	p {
 		line-height: 1.2;

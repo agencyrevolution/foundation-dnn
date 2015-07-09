@@ -6,6 +6,7 @@ $secondary-hero-color: lighten($tertiary-color, 45);
   	padding-bottom: rem-calc(10);
 	text-align: left;
 	border-bottom: 1px solid darken($secondary-hero-color, 10);
+	overflow: hidden;
 	.item-frame {
 		width: 100%;
 		text-align: center;

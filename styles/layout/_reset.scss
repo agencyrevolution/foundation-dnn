@@ -50,3 +50,8 @@ a.button {
 body form .row .row {
   margin: 0 rem-calc(0);
 }
+
+.Normal, .NormalDisabled, .NormalDeleted {
+  color: $body-font-color;
+  font-size: $base-font-size;
+}

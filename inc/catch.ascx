@@ -17,7 +17,11 @@
 			</div>
 			<div class="catch-call">
 				Call Us At <br>
-				<span><avt:MyTokens runat = 'server' Token = '[RevTemplate:Standard.LocalNumber]' /></span>
+				
+				<div class="hide-for-large-up"><span><a href="tel:<avt:MyTokens runat="server" Token="[RevTemplate:Standard.LocalNumber]" />"><avt:MyTokens runat="server" Token="[RevTemplate:Standard.LocalNumber]" /></a></span></div>
+
+				<div class="show-for-large-up"><span><i class="fa fa-phone"></i> <avt:MyTokens runat="server" Token="[RevTemplate:Standard.LocalNumber]" /></span></div>
+
 			</div>
 		</div>
 	</div>
