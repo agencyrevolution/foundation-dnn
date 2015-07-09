@@ -10,15 +10,26 @@
 <fortyfingers:STYLEHELPER ID="SH2" RemoveCssFile="portal.css"  runat="server" />
 
 <ar:Init runat='server'/>
-<dnn:DnnCssInclude runat="server" FilePath="dist/css/skin.css" PathNameAlias="SkinPath" ForceProvider="DnnPageHeaderProvider" Priority="6" />
+<dnn:DnnCssInclude runat="server" FilePath="dist/css/skin.min.css" PathNameAlias="SkinPath" ForceProvider="DnnPageHeaderProvider" Priority="6" />
+<dnn:DnnCssInclude runat="server" FilePath="inc/plugins/font-awesome/css/font-awesome.min.css" PathNameAlias="SkinPath" ForceProvider="DnnPageHeaderProvider" Priority="10" />
 <dnn:DnnJsInclude runat="server" FilePath="dist/js/skin.js" PathNameAlias="SkinPath" ForceProvider="DnnFormBottomProvider" Priority="4" />
 
 <header role="banner">
-<div class="header-wrap">
-  <fnn:TopBar runat="server"
-    RightNode="*,0,2"
-    RightExcludes="Home,Admin,Revolution"
-    Hover="false"
-  />
-</div>
+	<div class="header-wrap">
+	  <fnn:TopBar runat="server"
+	    LeftNode="*,0,2"
+	    LeftExcludes="Home,Admin,Revolution"
+	    RightPhone="true"
+    	MobilePhone="true"
+	    Hover="true"
+	  />
+	</div>
+	<div class="row identity">
+
+    <div class="small-12 columns">
+        <dnn:LOGO runat="server" />
+    </div>
+ 	</div>
+ 	<hr>
 </header>
+
