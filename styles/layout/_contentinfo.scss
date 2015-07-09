@@ -1,7 +1,44 @@
-.footer-top {
+$footer-color: $primary-color;
 
-}
+.footer-top {
+	@extend .common-padding; //see base.scss
+  @extend .make-it-white; //see base.scss
+  background-color: $footer-color;
+	p {
+    font-size: rem-calc(24);
+  }
+  .button {
+    margin-top: 2.5em;
+  }
+}	
 
 .footer-bottom {
+	@extend .common-padding; //see base.scss
+  @extend .make-it-white; //see base.scss
+	background: darken($footer-color,10%);
+  clear: both;
+  padding: 50px 0;
+  .links {
+    margin: 0;
+    display: inline-block;
+    li {
+      display: block;
+      float: left;
+      margin-left: 0;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: rem-calc(18);
+      a {
+        padding: 3px 12px 3px 0;
+      }
+    }
+  }
+  .address, .copyright {
+    margin: 6px 0 0;
+    font-size: rem-calc(14);
+    a {
+      font-weight: bold;
+    }
+  }
 
 }

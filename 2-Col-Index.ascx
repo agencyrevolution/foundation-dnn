@@ -5,7 +5,7 @@
 <%@ Register TagPrefix="ar" TagName="ContentInfo" Src="inc/contentinfo.ascx" %>
 <%@ Register TagPrefix="ar" TagName="Catch" src="inc/catch.ascx" %>
 
-<div class="page-template page-template-feature page-template-2-col">
+<div class="page-template page-template-index page-template-2-col">
 <ar:Banner runat="server" />
 
 <section class="feature-wrap primary-color" style="background-image: url(<avt:MyTokens runat='server' Token='[Tab:Iconfilelarge]' />)">
@@ -13,6 +13,7 @@
   <div class="row">
     <div class="small-12 columns text-center">
       <h1><%= PortalSettings.ActiveTab.TabName %></h1>
+      <h3 class="subheader"><%= PortalSettings.ActiveTab.Description %></h3>
       <div id="FeaturePane" class="feature" runat="server"></div>
     </div>
   </div>

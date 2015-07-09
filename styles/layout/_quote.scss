@@ -9,7 +9,6 @@
 }
 
 .pusher {
-  @extend .button;
   @extend .expand;
 }
 
@@ -51,6 +50,7 @@
     display: inline-block;
     margin-right: 10px;
   }
+
   span label {
     display: none;
   }
@@ -64,6 +64,21 @@
 
 .designation {
   font-size: 32px !important;
+}
+
+.fillme {
+  padding: 10px;
+  background-color: $alert-color;
+  margin-bottom: 10px;
+  label {
+    color: white;
+  }
+}
+
+span.fillme {
+  display: inline-block;
+  width: 100%;
+  color: white
 }
 
 .slider-quote {

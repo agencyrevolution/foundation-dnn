@@ -46,3 +46,8 @@ a.button {
     color: white;
   }
 }
+
+.Normal, .NormalDisabled, .NormalDeleted {
+  color: $body-font-color;
+  font-size: $base-font-size;
+}

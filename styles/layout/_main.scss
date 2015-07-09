@@ -1,4 +1,5 @@
 [role='main'] {
+  @extend .common-padding; //see base.scss
   .content {
     @extend .medium-8;
     @extend .columns;

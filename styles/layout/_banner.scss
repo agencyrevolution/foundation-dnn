@@ -1,3 +1,88 @@
+$header-color: $primary-color;
+$nav-color: $secondary-color;
+
+
+header {
+  .identity {
+    .page-template-index & {
+      display: none;
+    }
+    @extend .common-padding; //see base.scss 
+    width: 100%; 
+    div {
+      text-align: center;
+      img {
+        max-width: 400px;
+      }
+    }
+  }
+  hr {
+    .page-template-index & {
+      display: none;
+    }
+    padding: 0;
+    margin: 0;
+  }
+}
+.title-area h1 a {
+	display: none !important;
+}
+
 .top-bar {
-  .title-area img { height: 50px; }
+	position: relative;
+  z-index: 10;
+}
+
+.toggle-topbar {
+	border: white 2px solid;
+  border-radius: 50px;
+  padding: 0 !important;
+  height: 35px;
+  position: absolute;
+  left: 15px;
+  right: auto !important;
+  margin-top: -18px !important;
+}
+
+.phone.right {
+	position: absolute;
+  top: 5px;
+  right: 15px;
+  float: right;
+  width: auto !important;
+  padding: 0 !important;
+  a {
+  	color: white !important;
+  	&:hover, &:visited {
+  		color: white !important;
+  	}
+  }
+}
+
+header .right .phone {
+	padding: 0 !important;
+}
+
+.header-wrap .phone i {
+	font-size: 28px;
+  position: relative;
+  top: 5px;
+}
+
+@media #{$large-up} {
+	.phone.right {
+		display: none;
+	}
+	.top-bar-section ul li.phone {
+		padding: 0 !important;
+		a {
+			font-weight: 700;
+			font-size: rem-calc(18);
+		}
+		.fa-phone {
+			font-size: 28px;
+  		position: relative;
+  		top: 5px;
+		}
+	}
 }
