@@ -7,7 +7,7 @@
   [?ENABLED]
     <a href="[=URL]">
       <div class="item-frame">
-        <img class="item-image" src="[=ICON]?dw=280&tw=280&mw=280" alt="[=TEXT]">
+        <img class="item-image" src="[=ICON]?dw=140&tw=280&mw=280" alt="[=TEXT]">
       </div>
     </a>
     <a href="[=URL]">
