@@ -14,3 +14,7 @@ $(':input','.field').each(function(index, elem) {
 });
 // remove inline styles from state select
 $('select', '.state').removeAttr( 'style' );
+// Disable Dynamic Font Size on Quote Form Headline
+$('h1', '.designation').removeAttr('style').replaceWith(function() {
+	return '<h2>' + $(this).text() + '</h2>';
+});
