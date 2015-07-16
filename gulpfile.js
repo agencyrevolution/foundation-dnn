@@ -35,10 +35,7 @@ gulp.task('browserify', function() {
 gulp.task('browserify-min', function() {
   // Single point of entry
   gulp.src([ './scripts/main.js' ])
-  .pipe(browserify({
-    insertGlobals: true,
-    debug: true
-  }))
+  .pipe(browserify({ insertGlobals: true }))
   // Bundle to a single file
   .pipe(concat('skin.js'))
   // Output it to our dist folder
