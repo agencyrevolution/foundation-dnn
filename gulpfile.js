@@ -12,7 +12,7 @@ var gulp = require('gulp'),
 
 // JSHint task
 gulp.task('lint', function() {
-  gulp.src('./scripts/*.js')
+  gulp.src('./js/*.js')
     .pipe(jshint())
     .pipe(jshint.reporter('default'));
 });
@@ -20,11 +20,8 @@ gulp.task('lint', function() {
 // Browserify task
 gulp.task('browserify', function() {
   // Single point of entry
-  gulp.src([ './scripts/main.js' ])
-  .pipe(browserify({
-    insertGlobals: true,
-    debug: true
-  }))
+  gulp.src([ './js/main.js' ])
+  .pipe(browserify({ insertGlobals: true }))
   // Bundle to a single file
   .pipe(concat('skin.js'))
   // Output it to our dist folder
@@ -34,7 +31,7 @@ gulp.task('browserify', function() {
 // Browserify task
 gulp.task('browserify-min', function() {
   // Single point of entry
-  gulp.src([ './scripts/main.js' ])
+  gulp.src([ './js/main.js' ])
   .pipe(browserify({
     insertGlobals: true,
     debug: true
@@ -92,7 +89,7 @@ gulp.task('minifyCSS', function() {
 gulp.task('minify', ['minifyJS','minifyCSS']);
 
 gulp.task('watch', ['lint'], function() {
-  gulp.watch(['./scripts/*.js', './scripts/**/*.js'],[
+  gulp.watch(['./js/*.js', './js/**/*.js'],[
     'lint',
     'browserify'
   ]);
@@ -102,7 +99,7 @@ gulp.task('watch', ['lint'], function() {
 });
 
 gulp.task('watch-all', ['lint'], function() {
-  gulp.watch(['./scripts/*.js', './scripts/**/*.js'],[
+  gulp.watch(['./js/*.js', './js/**/*.js'],[
     'lint',
     'browserify-min'
   ]);
