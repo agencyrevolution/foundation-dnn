@@ -17,11 +17,11 @@ $base-color: lighten($quaternary-color, 8);
 .content-shadow section > .row {
   margin-left: 0;
   margin-right: 0;
-  overflow: hidden;
 }
 
 .content-shadow {
   box-shadow: rgba(0, 0, 0, 0.1) 0 0 10px;
+  overflow: hidden;
 }
 
 // main bg color
