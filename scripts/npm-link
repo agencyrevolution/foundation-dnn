@@ -2,7 +2,7 @@
 
 sudo chown -R $(whoami) ~/.npm
 
-npm link gulp-jshint
+npm link gulp-eslint
 npm link gulp-browserify
 npm link gulp-concat
 npm link gulp-sass
