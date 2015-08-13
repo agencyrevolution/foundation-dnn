@@ -28,6 +28,10 @@ gulp build-watch
 ```
 # Install Hub Subcommand for this
 brew install hub
+# or on linux
+sudo add-apt-repository ppa:cpick/hub
+sudo apt-get update
+sudo apt-get install hub
 
 # Create new repo
 git remote rename origin upstream
