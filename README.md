@@ -15,12 +15,10 @@ sudo scripts/install
 
 # Re-install
 rm -rf node_modules
-npm i --no-bin-links
+sudo npm i --no-bin-links
 
 # Start hacking
 gulp dev
-# or
-gulp build-watch
 ```
 
 ## Custom Theme
@@ -48,7 +46,7 @@ git commit -m "Changes..."
 git pull upstream master
 
 # Publish the changes to your new repo
-git push origin custom
+git push -u origin custom
 ```
 
 ## Switching Themes
