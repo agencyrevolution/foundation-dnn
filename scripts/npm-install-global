@@ -1,6 +1,8 @@
 #! /bin/bash
 
-npm install -g gulp-jshint
+sudo chown -R $(whoami) ~/.npm
+
+npm install -g gulp-eslint
 npm install -g gulp-browserify
 npm install -g gulp-concat
 npm install -g gulp-sass
@@ -10,4 +12,12 @@ npm install -g gulp-rename
 npm install -g gulp-uglify
 npm install -g gulp
 
-npm-link
+npm link gulp-eslint
+npm link gulp-browserify
+npm link gulp-concat
+npm link gulp-sass
+npm link gulp-autoprefixer
+npm link gulp-minify-css
+npm link gulp-rename
+npm link gulp-uglify
+npm link gulp
