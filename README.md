@@ -9,7 +9,7 @@
 
 ## Installation
 
-```
+``` bash
 # First Run
 sudo scripts/install
 
@@ -23,7 +23,7 @@ gulp dev
 
 ## Custom Theme
 
-```
+``` bash
 # Install Hub Subcommand for this
 brew install hub
 # or on linux
