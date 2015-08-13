@@ -50,21 +50,9 @@ gulp.task('stylesheets', function() {
   gulp.src('./styles/*.scss')
     .pipe(sass({onError: function(e) { console.log(e); },
       includePaths: [
-        'styles/vendor/foundation/scss',
-        'styles/vendor/utility-belt/scss',
-        'styles/vendor/slick/slick'
-      ]}))
-    .pipe(prefix('last 2 versions'))
-    .pipe(gulp.dest('./dist/css/'));
-});
-
-gulp.task('stylesheets-min', function() {
-  gulp.src('./styles/*.scss')
-    .pipe(sass({onError: function(e) { console.log(e); },
-      includePaths: [
-        'styles/vendor/foundation/scss',
-        'styles/vendor/utility-belt/scss',
-        'styles/vendor/slick/slick'
+        'node_modules/foundation-sites/scss',
+        'node_modules/utility-belt/scss',
+        'node_modules/slick-carousel/slick'
       ]}))
     .pipe(prefix('last 2 versions'))
     .pipe(gulp.dest('./dist/css/'))
@@ -105,7 +93,7 @@ gulp.task('watch-all', ['lint'], function() {
     'browserify-min'
   ]);
   gulp.watch(['./styles/*.scss', './styles/**/*.scss'], [
-    'stylesheets-min'
+    'stylesheets'
   ]);
 });
 
