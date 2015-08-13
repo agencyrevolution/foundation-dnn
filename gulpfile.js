@@ -1,7 +1,7 @@
 'use strict';
 
 var gulp = require('gulp'),
-    jshint = require('gulp-jshint'),
+    eslint = require('gulp-eslint'),
     browserify = require('gulp-browserify'),
     concat = require('gulp-concat'),
     sass = require('gulp-sass'),
@@ -12,9 +12,10 @@ var gulp = require('gulp'),
 
 // JSHint task
 gulp.task('lint', function() {
-  gulp.src('./js/*.js')
-    .pipe(jshint())
-    .pipe(jshint.reporter('default'));
+  return gulp.src('js/**/*.js')
+    .pipe(eslint())
+    .pipe(eslint.format())
+    .pipe(eslint.failOnError());
 });
 
 // Browserify task
