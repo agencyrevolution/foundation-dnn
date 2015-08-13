@@ -2,4 +2,3 @@
 
 npm install gulp -g
 npm install --no-bin-links
-./npm-preen
