@@ -1,5 +1,3 @@
 *.DS_Store
-/dist/*
-/styles/vendor/*
 /node_modules/*
 *.log
