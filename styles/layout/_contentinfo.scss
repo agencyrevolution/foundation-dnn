@@ -1,7 +1,96 @@
 .footer-top {
+  @extend .full-width;
+  background-color: $primary-color;
+  background-image: url(/portals/clay/images/pattern.png);
 
+  @media #{$medium-up} {
+    height: 180px;
+  }
+  h4 {
+    @extend .medium-6;
+    @extend .columns;
+    @extend .left;
+    color: white;
+    margin-top: 60px;
+    font-size: rem-calc(30);
+  }
+  .main-office-phone {
+    
+  }
+  a {
+    @extend .medium-6;
+    @extend .columns;
+  }
+  a.button {
+    @extend .warning;
+    margin-top: 60px;
+    border-radius: 8px;
+    font-size: 25px;
+    font-family: Oswald,Arial,sans-serif;
+    padding: 6px;
+    text-transform: uppercase;
+    max-width: 400px;
+  }
 }
 
 .footer-bottom {
+  @extend .full-width;
+  background-color: $jet;
+  h4 {
+    color: white;
+  }
+  .footer-nav, .footer-connected {
+    @extend .small-12;
+    @extend .medium-3;
+    @extend .large-3;
+    @extend .columns;
+    a {
+      color: white;
+    }
+  }
+    ul.footer-list {
 
+      list-style-type: none;
+      a {
+      color: white;
+      }
+    }
+  .footer-office {
+    @extend .small-12;
+    @extend .medium-3;
+    @extend .large-3;
+    @extend .columns;
+    color: white;
+    a {color: white;}
+  }
+
+  .footer-hours {
+    @extend .small-12;
+    @extend .medium-3;
+    @extend .large-3;
+    @extend .columns;
+    p {
+      color: white;
+    }
+  }
+  .footer-copyright {
+    @extend .small-12;
+    @extend .medium-12;
+    @extend .large-12;
+    @extend .columns;
+    margin-top: rem-calc(15);
+    padding-top: rem-calc(15);
+    color: white;
+    a {
+      color: white;
+    }
+  }
+  .footer-connected {
+    .fa {
+      font-size: rem-calc(20);
+      margin-right: rem-calc(2);
+      padding-top:10px;
+      padding-right: 10px;
+    }
+  }
 }

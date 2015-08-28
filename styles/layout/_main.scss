@@ -14,7 +14,127 @@
       @extend .medium-12;
       border-right: 0;
     }
+  }
+  .LeftPane {
+    @extend .medium-6;
+    @extend .columns;
+    background-color: $jet;
+    min-height: 400px !important;
 
+  }
+
+  .review-content {
+    border-left: none !important;
+  }
+
+  p.review-description {
+    color: white;
+    font-family: Georgia, Serif;
+    margin-top: 20px;
+  }
+
+  .review-name {
+    color: white;
+    font-family: Georgia, Serif;
+    font-size: rem-calc(17);
+  }
+  .testimonial-content {
+    padding-left: 40px;
+    padding-right: 30px;
+    h2 {
+      color: white;
+      padding-bottom: 30px;
+    }
+  }
+  .testimonial-item.slick-slide {
+    color: white !important;
+    font-family: Georgia, Serif !important;
+    font-size: rem-calc(17) !important;
+    font-style: italic;
+  }
+  span.quote-after {
+    color: white !important;
+  }
+  .RightPane {
+    @extend .medium-6;
+    @extend .columns;
+    @extend .right;
+  }
+
+  h3.item-name {
+    font-size: rem-calc(17);
+    color: rgba(1, 62, 125, 0);
+
+    @media #{$medium-up} {
+      margin-left: 15px;
+    }
+  }
+
+  .slick-slide {
+    color: white;
+    padding: 40px 0;
+    font-size: 30px;
+    img {
+      max-height: 80px;
+      min-height: 80px;
+      @media #{$medium-up} {
+        max-height: 120px;
+        min-height: 120px;
+      }
+    }
+  }
+  .niche-slider {
+    @media #{$medium-up} {
+      padding-left: 70px;
+    }
+    .slick-list {
+      margin-left: 37px;
+    }
+  }
+  .slick-prev, .slick-next {
+    position: absolute !important;
+    background-color: transparent !important;
+    color: transparent!important;
+    border: none !important;
+    outline: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 52px !important;
+    top: 79px !important;
+    &:before {
+      font-family: FontAwesome !important;
+      color: darken($secondary-color, 40);
+      font-size: rem-calc(40);
+    }
+    &:hover {
+      &:before {
+        color: darken($secondary-color, 60);
+      }
+    }
+  }
+  .slick-prev {
+    &:before {
+      position: relative;
+      left: -18px;
+      content: "\f053";
+    }
+  }
+  .slick-next {
+    right: -65px;
+    &:before {
+      content: "\f054";
+    }
+  }
+  .slide-item {
+    h3 {
+      font-size: rem-calc(21);
+      color: $primary-color;
+      padding-top: 30px;
+      margin-left: 10px;
+    }
+  }
+
+  .slick-slide:nth-child(odd) {
   }
 
   // Half size HR
@@ -22,7 +142,6 @@
     margin: 40px auto;
     width: 100px;
   }
-
 }
 
 @media #{$medium-up} {
@@ -30,5 +149,14 @@
     .aside {
       padding-left: 20px;
     }
+  }
+}
+
+//map-homepage
+.home-map {
+  text-align: center;
+  background-color: $secondary-color;
+  img {
+    padding: 20px;
   }
 }

@@ -1,0 +1,13 @@
+#! /bin/bash
+
+sudo chown -R $(whoami) ~/.npm
+
+npm link gulp-jshint
+npm link gulp-browserify
+npm link gulp-concat
+npm link gulp-sass
+npm link gulp-autoprefixer
+npm link gulp-minify-css
+npm link gulp-rename
+npm link gulp-uglify
+npm link gulp

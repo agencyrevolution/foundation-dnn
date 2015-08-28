@@ -17,8 +17,7 @@
         <div class="feature-wrap-color"></div>
         <div class="row">
           <div class="small-12 columns feature-content">
-            <h1><%= PortalSettings.ActiveTab.TabName %></h1>
-            <h4 class="subheader"><%= PortalSettings.ActiveTab.Description %></h4>
+            <h2><%= PortalSettings.ActiveTab.TabName %></h2>
           </div>
         </div>
       </div>

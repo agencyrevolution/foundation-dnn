@@ -5,21 +5,47 @@
 <%@ Register TagPrefix="dnn" TagName="Menu" src="~/DesktopModules/DDRMenu/Menu.ascx" %>
 <%@ Register TagPrefix="avt" TagName="MyTokens" Src="~/DesktopModules/avt.MyTokens/SkinObjectReplacer.ascx" %>
 
-<hr class="half-rule">
 <footer role="contentinfo">
-<div class="footer-top row">
-  <div class="small-12 columns text-center">
-    <h4>We want to protect what matters most to you.</h4>
-    <a class="button" href="/insurance-quotes">Get a Quote</a>
+  <div class="footer-top row">
+    <div class="small-12 columns text-center">
+      <h4>Don't Delay</h4>
+      <a class="button" href="/insurance-quotes">Quote Today!</a>
+    </div>
   </div>
-</div>
-<hr>
-<div class="footer-bottom text-center">
-  <p class="copyright">&copy; <dnn:Copyright id="Copyright" runat="server" />. Made by <a href="http://www.agencyrevolution.com">Agency Revolution</a> in Oregon</p>
 
-  <ul class="medium-6 medium-centered columns inline-list">
-    <dnn:Menu MenuStyle="/admin/AgencyRev/Framework/Foundation/Menus/menu-list" NodeSelector="*,0,2" ExcludeNodes="Home,Admin,Revolution" runat="server" ></dnn:Menu>
-    <li><dnn:Login runat="server" id="dnnLogin" Text="Sign In" LogoffText="Sign Out" /></li>
-  </ul>
+  <div class="footer-bottom row">
+    <div class="footer-nav">
+      <h4>Find out more</h4>
+      <ul class="footer-list">
+        <dnn:Menu MenuStyle="/admin/AgencyRev/Framework/Foundation/Menus/menu-list" NodeSelector="*,0,2" ExcludeNodes="Home,Admin,Revolution" runat="server" ></dnn:Menu>
+      </ul>
+    </div>
+    <div class="footer-connected">
+      <h4>Stay connected</h4>
+      <a href="/blog">Read Our Blog</a><br>
+      <a href="https://twitter.com/"><i class="fa fa-twitter"></i></a> <a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a> <a href="https://www.linkedin.com"><i class="fa fa-linkedin"></i></a>
+    </div>
+    <div class="footer-office">
+      <div class="row">
+        <h4>Main office</h4>
+        <p class="main-office"><strong>Alpine Insurance </strong><br/>
+          300-5824 - 2 St SW<br/>
+          Calgary, AB T2H 0H2
+        </p>
+        <p class="main-office-phone">
+          <a href="tel:4032708822">(403) 270-8822</a><br/>
+          <a href="tel:8777708822">(877) 770-8822</a></p>
+      </div>
+    </div>
+    <div class="footer-hours">
+      <div class="row">
+        <h4>Hours</h4>
+        <p><strong>M - F</strong> 8:30am to 5:00pm</p>
+      </div>
+    </div>
+    <div    class="footer-copyright">
+      <dnn:Login runat="server" id="dnnLogin" Text="Sign In" LogoffText="Sign Out" /> | &copy; <dnn:Copyright id="Copyright" runat="server" /> Made by <a href="http://www.agencyrevolution.com">Agency Revolution</a> in Oregon.
+    </div>
+  </div>
 </div>
 </footer>

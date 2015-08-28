@@ -1,6 +1,0 @@
-#! /bin/bash
-
-rm -rf node_modules package.json gulpfile.js
-wget https://raw.githubusercontent.com/agencyrevolution/foundation-dnn/master/package.json
-wget https://raw.githubusercontent.com/agencyrevolution/foundation-dnn/master/gulpfile.js
-npm i --no-bin-links

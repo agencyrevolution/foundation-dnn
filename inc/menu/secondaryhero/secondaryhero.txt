@@ -1,0 +1,20 @@
+
+<div class="niche-slider">
+  [*>NODE-TOP]
+</div>
+
+[>NODE-TOP]
+
+    [?ENABLED]
+        <div class="slide-item">
+          <div>
+            <a href="[=URL]"><img src="[=ICON]?dw=220" alt="[=TEXT]"></a>
+            <div>
+              <a href="[=URL]"><h3>[=TEXT]</h3></a>
+            </div>
+          </div> 
+        </div>
+    [?ELSE]
+      [=TEXT]
+    [/?]
+[/>]

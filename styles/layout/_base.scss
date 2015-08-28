@@ -6,3 +6,35 @@
 @import 'main';
 @import 'quote';
 @import 'contentinfo';
+
+// ----------------------------------------------------------------------------
+// Global
+
+.full-width {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+}
+
+.make-it-white {
+  color: white;
+  .Normal {
+    color: white;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    color: white;
+  }
+  a, a:hover, a:visited {
+    color: white;
+  }
+}
+
+.super-heading {
+  font-size: $h1-font-size !important;
+}
+
+.common-padding {
+  padding-top: rem-calc(40);
+  padding-bottom: rem-calc(40);
+}

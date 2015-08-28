@@ -1,0 +1,12 @@
+html, body.dnnEditState {
+  overflow-x: hidden; }
+
+.dnnEditState .DnnModule {
+  opacity: 1 !important; }
+
+.showControlBar body {
+  margin-top: 53px; }
+.showControlBar #canvas {
+  margin-top: -53px; }
+.showControlBar .fixed, .showControlBar .blur {
+  top: 53px; }

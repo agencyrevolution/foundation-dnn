@@ -1,12 +1,22 @@
 .page-template-feature.page-template-2-col {
   .feature-wrap {
+    @extend .make-it-white; //see base.scss
+  	position: relative;
     background-color: $primary-color;
-    background-position: 100% 25%;
+    background-position: center center;
     background-size: cover;
     padding: rem-calc(76) 0;
-
-    h1,
-    h3 { color: #fff; }
-
+    text-shadow: rgb(0,0,0) 1px 1px 0px;
+    h2 {
+    	font-size: rem-calc(44);
+    }
+    .feature-wrap-color {
+			background-image: linear-gradient(45deg,rgba(0,0,0,.75) 20%, rgba(0,0,0,.1) 100%,transparent);
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+		}
   }
 }
