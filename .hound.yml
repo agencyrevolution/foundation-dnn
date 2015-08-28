@@ -1,2 +1,4 @@
+java_script:
+  config_file: config/.jshint.json
 scss:
   config_file: config/scss.yml
