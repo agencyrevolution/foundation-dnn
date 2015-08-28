@@ -1,3 +1,4 @@
 *.DS_Store
+/styles/vendor/*
 /node_modules/*
 *.log
