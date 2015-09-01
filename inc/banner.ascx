@@ -1,6 +1,7 @@
 <%@ Control language="c#" AutoEventWireup="true" Explicit="True" Inherits="DotNetNuke.UI.Skins.SkinObjectBase" %>
 <%@ Register TagPrefix="dnn" Namespace="DotNetNuke.Web.Client.ClientResourceManagement" Assembly="DotNetNuke.Web.Client" %>
 <%@ Register TagPrefix="dnn" TagName="Logo" Src="~/Admin/Skins/Logo.ascx" %>
+
 <%@ Register TagPrefix="avt" TagName="MyTokens" Src="~/DesktopModules/avt.MyTokens/SkinObjectReplacer.ascx" %>
 <%@ Register TagPrefix="ar" TagName="Init" Src="~/Admin/AgencyRev/Base/Initilization/Initilization2.ascx" %>
 <%@ Register TagPrefix="fnn" TagName="TopBar" Src="~/Admin/AgencyRev/Framework/Foundation/Components/Top-bar.ascx" %>
@@ -17,19 +18,17 @@
 
 <header role="banner">
   <div class="header-top row">
-    <div class="logo">
-      <a href="/"><img src="/portals/clay/alpine-logo-inside-pages.png"></a>
-    </div>
+    <dnn:LOGO runat="server" />
     <div class="primary-phone">
-      <p>Call Us: <a class="header-phone" href="tel:4032708822">403.270.8822</a></p>
+      <p>Call Us: <a class="header-phone" href="tel:<avt:MyTokens runat="server" Token="[RevTemplate:Standard.LocalNumber]" />"><avt:MyTokens runat="server" Token="[RevTemplate:Standard.LocalNumber]" /></a></p>
     </div>
   </div>
   <div class="row nav-wrap full-width">
     <div class="left-col left">
       <div class="header-wrap">
         <fnn:TopBar runat="server"
-        RightNode="*,0,2"
-        RightExcludes="Home,Admin,Revolution"
+        LeftNode="*,0,2"
+        LeftExcludes="Home,Admin,Revolution"
         Hover="false"
         />
       </div>

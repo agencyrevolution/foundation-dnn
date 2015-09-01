@@ -11,6 +11,9 @@
     text-align: left;
   }
 }
+img#dnn_ctl00_ctl07_imgLogo {
+  max-height: 95px;
+}
 
 .primary-phone {
   @extend .columns;
@@ -56,7 +59,7 @@ ul.right {
 
 .nav-wrap {
   background-color: $primary-color;
-  background-image: url(/portals/clay/images/pattern.png);
+  background-image: url(../../images/pattern.png);
 }
 
 .right-col {

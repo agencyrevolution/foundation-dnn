@@ -23,29 +23,41 @@
     <div class="footer-connected">
       <h4>Stay connected</h4>
       <a href="/blog">Read Our Blog</a><br>
-      <a href="https://twitter.com/"><i class="fa fa-twitter"></i></a> <a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a> <a href="https://www.linkedin.com"><i class="fa fa-linkedin"></i></a>
+      <a href="https://twitter.com/CharlotteIns" target="_blank"><i class="fa fa-twitter"></i></a> <a href="https://www.facebook.com/CharlotteInsurance" target="_blank"><i class="fa fa-facebook"></i></a> <a href="http://www.linkedin.com/company/charlotte-insurance?trk=copro_tab" target="_blank"><i class="fa fa-linkedin"></i></a>
     </div>
     <div class="footer-office">
-      <div class="row">
-        <h4>Main office</h4>
-        <p class="main-office"><strong>Alpine Insurance </strong><br/>
-          300-5824 - 2 St SW<br/>
-          Calgary, AB T2H 0H2
-        </p>
-        <p class="main-office-phone">
-          <a href="tel:4032708822">(403) 270-8822</a><br/>
-          <a href="tel:8777708822">(877) 770-8822</a></p>
+
+      <h4>Main Office</h4>
+
+      <div class="office-right">
+
+        <div class="address" itemscope itemtype="http://schema.org/LocalBusiness">
+          <span itemprop="name"><%=PortalSettings.PortalName %></span>
+          <span itemprop="description" class="hide"><%=PortalSettings.ActiveTab.Description %></span>
+          <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+            <span itemprop="streetAddress"><avt:MyTokens runat="server" Token="[RevTemplate:Standard.StreetAddress]" /></span><br>
+            <span itemprop="addressLocality"><avt:MyTokens runat="server" Token="[RevTemplate:Standard.City]" /></span>, 
+            <span itemprop="addressRegion"><avt:MyTokens runat="server" Token="[RevTemplate:Standard.StateAbbr]" /></span>
+            <span itemprop="postalCode"><avt:MyTokens runat="server" Token="[RevTemplate:Standard.ZipCode]" /></span>
+          </div>
+          <span itemprop="telephone"><a href="tel:<avt:MyTokens runat="server" Token="[RevTemplate:Standard.LocalNumber]" />"><avt:MyTokens runat="server" Token="[RevTemplate:Standard.LocalNumber]" /></a></span>
+        </div>
+
       </div>
+
     </div>
     <div class="footer-hours">
-      <div class="row">
-        <h4>Hours</h4>
-        <p><strong>M - F</strong> 8:30am to 5:00pm</p>
+        <h3>Hours</h3>
+        <p>9:00am - 5pm, M - F</p>
+
       </div>
-    </div>
-    <div    class="footer-copyright">
+
+
+
+
+    <div class="footer-copyright">
       <dnn:Login runat="server" id="dnnLogin" Text="Sign In" LogoffText="Sign Out" /> | &copy; <dnn:Copyright id="Copyright" runat="server" /> Made by <a href="http://www.agencyrevolution.com">Agency Revolution</a> in Oregon.
     </div>
+
   </div>
-</div>
 </footer>

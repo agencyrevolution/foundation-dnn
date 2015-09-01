@@ -1,8 +1,8 @@
 .footer-top {
   @extend .full-width;
   background-color: $primary-color;
-  background-image: url(/portals/clay/images/pattern.png);
-
+  background-image: url(../../images/pattern.png);
+  
   @media #{$medium-up} {
     height: 180px;
   }
@@ -69,7 +69,7 @@
     @extend .medium-3;
     @extend .large-3;
     @extend .columns;
-    p {
+    p, h3 {
       color: white;
     }
   }

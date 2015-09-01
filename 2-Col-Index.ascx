@@ -82,7 +82,9 @@ $("#e_2").focus(function(){
       <div id="AsidePane" class="aside" role="complementary" runat="server"></div>
 
     </div>
-    <div id="BottomPane" class="bottom" runat="server"></div>
+    <div class="row">
+      <div id="BottomPane" class="bottom" runat="server"></div>
+    </div>
   </section>
   <ar:ContentInfo runat="server" />
 </div>

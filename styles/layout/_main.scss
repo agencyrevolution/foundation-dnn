@@ -18,7 +18,7 @@
   .LeftPane {
     @extend .medium-6;
     @extend .columns;
-    background-color: $jet;
+    background-color: $secondary-color;
     min-height: 400px !important;
 
   }
@@ -103,12 +103,12 @@
     top: 79px !important;
     &:before {
       font-family: FontAwesome !important;
-      color: darken($secondary-color, 40);
+      color: $oil;
       font-size: rem-calc(40);
     }
     &:hover {
       &:before {
-        color: darken($secondary-color, 60);
+        color: $oil;
       }
     }
   }
