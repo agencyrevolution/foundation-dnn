@@ -20,7 +20,7 @@ sudo ./scripts/npm-link
 sudo npm install --production
 
 # Move necessary assets out of dependencies
-sudo ./npm-preen
+sudo ./scripts/npm-preen
 
 # Start hacking
 gulp dev
