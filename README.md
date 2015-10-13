@@ -11,10 +11,10 @@
 
 ```
 # Install devDependencies first time only
-sudo ./npm-install-global
+sudo ./scripts/npm-install-global
 
 # Next time you only need to run this
-sudo ./npm-link
+sudo ./scripts/npm-link
 
 # Install dependencies
 sudo npm install --production
