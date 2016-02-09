@@ -112,11 +112,17 @@ span.fillme {
   @extend .columns;
   @extend .medium-6;
   @extend .small-12;
+  text-align: right;
+  @media #{$small-only} {
+    text-align: center;
+  }
   input#e_2 {
     border-radius: 8px;
     height: 50px;
-    max-width: 400px;
+    max-width: 400px; 
+    display: inline-block;
     @media #{$medium-up} {
+      margin-bottom: 0;
     }
   }
 }
@@ -125,6 +131,9 @@ span.fillme {
   @extend .columns;
   @extend .medium-6;
   @extend .small-12;
+  @media #{$small-only} {
+    text-align: center;
+  }
   div#saveForm {
     border-radius: 8px;
     font-size: 25px;
@@ -132,20 +141,17 @@ span.fillme {
     text-transform: uppercase;
     padding: 6px;
     max-width: 400px;
+    margin-bottom: 0;
     i {
       padding-left: 20px;
     }
   }
 }
+
 .quick-quote {
-  @extend .full-width;
-  @extend .columns;
   background-image: linear-gradient(-180deg, #000000 0%, rgba(0,0,0,0.42) 51%, #000000 100%);
-  margin-top: -170px;
-  padding-top: 25px;
-  padding-bottom: 10px;
+  padding: 20px 0;
   @media #{$medium-up} {
-    margin-top: -100px;
-    padding-left: 59px;
+    margin-top: -90px;
   }
 }

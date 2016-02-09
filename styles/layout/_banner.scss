@@ -1,108 +1,155 @@
-.header-top {
-  height: 100px;
-}
+$header-color: $primary-color;
 
-.logo {
+.brand {
   @extend .columns;
   @extend .medium-6;
-  @extend .small-12;
-  text-align: center;
-  @media #{$medium-up} {
-    text-align: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  @media #{$small-only} {
+    text-align: center;
   }
-}
-img#dnn_ctl00_ctl07_imgLogo {
-  max-height: 95px;
 }
 
 .primary-phone {
   @extend .columns;
   @extend .medium-6;
-  @extend .right;
   @extend .hide-for-small-only;
+  position: relative;
+}
+
+.primary-phone-content {
   font-family: $header-font-family;
   text-align: right;
-  padding-top: 50px;
-  p {
-    color: $oil;
-    font-size: rem-calc(30);
-    text-transform: uppercase;
-    margin-bottom: 0px !important;
-  }
-  a {
-    color: $primary-color;
+  color: $body-font-color;
+  font-size: rem-calc(30);
+  text-transform: uppercase;
+  position: relative;
+  top: 80%;
+  transform: translateY(-80%);
+  span {
+    font-family: $header-font-family;
+    color: $header-color;
     font-weight: 300;
   }
 }
-ul.right {
-  @extend .small-12;
-  @extend .columns;
-}
-
-.slider-image {
-  @extend .row;
-  min-height: 540px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.top-bar {
-  @media #{$medium-up} {
-    margin-left: 70px;
-    background-color: rgba(1, 62, 125, 0);
-  }
-  .top-bar-section .dropdown li { 
-    background-color: $primary-color;
-  }
-  .title-area h1 {display: none;}
-}
 
 .nav-wrap {
-  background-color: $primary-color;
+  position: relative;
+  background-color: $header-color;
   background-image: url(../../images/pattern.png);
 }
 
-.right-col {
-  text-transform: uppercase;
-  margin-right: 32px;
+.left-col {
+  @extend .columns;
+  @extend .small-12;
+  padding: 0 !important;
+}
 
-  h4 a {
+.top-bar {
+  .title-area h1 {
+    display: none;
+  }
+  .toggle-topbar {
+    left: 0;
+  }
+  .toggle-topbar.menu-icon a span::after  {
+    left: 72px;
+  }
+}
+
+.top-bar-section .dropdown li.title h5 a:hover {
+  &:hover {
+    background-color: $topbar-dropdown-link-bg-hover !important;
+  }
+}
+
+.top-bar-section ul li {
+  @media #{$large-up} {
+    background-color: transparent !important;
+  }
+}
+
+.top-bar-section .has-dropdown .dropdown li.has-dropdown>a:after {
+  @media #{$large-up} {
+    line-height: 0.1px !important;
+  }
+}
+
+.top-bar-section ul li {
+  a, > a {
     @media #{$small-only} {
-      display: none;
+      font-size: 18px !important;
+      line-height: 48px !important;
     }
+  }
+  .dropdown a {
+    @media #{$large-up} {
+      font-size: 12px !important;
+      line-height: 35px !important;
+    }
+  }
+}
+
+ul.left li a {
+  &:hover {
+    background-color: $topbar-secondary-color !important;
+  }
+}
+
+.toggle-topbar.menu-icon {
+  font-family: $header-font-family !important;
+}
+
+.right-col {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  text-align: right;
+  text-transform: uppercase;
+  a {
+    font-family: $header-font-family;
     color: white;
     font-size: rem-calc(14);
-    line-height: 4;
-  }
-  i {
-    font-size: rem-calc(18);
-    color: rgba(255,255,255,0.60);
-    padding-right: 10px;
-    padding-left: 10px;
-  }
+    height: $topbar-height;
+    line-height: $topbar-height;
+    i {
+      font-size: rem-calc(18);
+      color: rgba(white,0.60);
+      padding-right: 10px;
+      padding-left: 10px;
+      @media #{$small-only} {
+        padding-right: 15px;
+        padding-left: 15px;
+      }
+    }
+    &:visited {
+      color: white;
+    }
+    &:hover {
+      color: darken(white, 20);
+      i {
+        color: rgba(darken(white, 20),0.60);
+      }
+    }
+  } 
 }
-.connect-icons {
-  margin-top: 15px;
-  a {
-    font-size: rem-calc(18);
-    color: rgba(255,255,255,0.60);
-    padding-right: 15px;
-    padding-left: 15px;
-  }
-}
-section.feature-wrap.primary-color {
-  height: 500px;
+
+// homepage-hero
+
+.homepage-hero {
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center center;
   @media #{$small-only} {
-    background-position-x: 40%;
+    height: 390px - $banner-height;
+  }
+  @media #{$medium-only} {
+    height: 530px - $banner-height;
+  }
+  @media #{$large-only} {
+    height: 690px - $banner-height;
+  }
+  @media #{$xlarge-up} {
+    height: 870px - $banner-height;
   }
 }
-  .homepage-hero-sidebar {
-    background-image: linear-gradient(-180deg, #000000 0%, rgba(0,0,0,0.42) 51%, #000000 100%);
-    // margin-top: -186px;
-    @media #{$medium-up} {
-      // margin-top: -133px;
-    }
-    padding: 20px;
-  }

@@ -6,7 +6,7 @@ $icon  : '#{$image}Someicons/PNG/';
 $fonts : '#{$root}fonts/';
 $js    : '#{$root}js/';
 
-$experimental: true;
+// $experimental: true;
 
 // Slick
 
@@ -77,7 +77,6 @@ $slick-dot-size: 6px;
 
 // Allows the use of rem-calc() or lower-bound() in your settings
 @import "foundation/functions";
-@import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
 
 // The default font-size is set to 100% of the browser style sheet (usually 16px)
 // for compatibility with browser-based text zoom or user-set defaults.
@@ -138,17 +137,17 @@ $jet         : #100634;
 // $black       : #000000;
 
 // We use these as default colors throughout
-$primary-color: #27275c;
+$primary-color: darken(#2374b3, 5);
 $secondary-color: darken($primary-color, 7%);
-$alert-color: #ff8400;
+$alert-color: #ebc407;
 // $success-color: #43AC6A;
-// $warning-color: #f08a24;
+$warning-color: darken(#ebc407, 5);
 // $info-color: #a0d3e8;
 
 // We use these to control various global styles
 // $body-bg: $white;
-// $body-font-color: $jet;
-$body-font-family: 'Helvetica', Helvetica, Arial, sans-serif;
+$body-font-color: #454545;
+$body-font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 // $body-font-weight: $font-weight-normal;
 // $body-font-style: normal;
 
@@ -220,7 +219,7 @@ $medium-range: (40.063em, 64em);
 $header-font-family: 'Oswald', Arial, sans-serif;
 // $header-font-weight: $font-weight-normal;
 // $header-font-style: normal;
-// $header-font-color: $jet;
+$header-font-color: #454545;
 // $header-line-height: 1.4;
 // $header-top-margin: .2rem;
 // $header-bottom-margin: .5rem;
@@ -229,8 +228,8 @@ $header-font-family: 'Oswald', Arial, sans-serif;
 // We use these to control header font sizes
 $h1-font-size: rem-calc(44);
 $h2-font-size: rem-calc(28);
-$h3-font-size: rem-calc(25);
-$h4-font-size: rem-calc(22);
+$h3-font-size: rem-calc(22);
+$h4-font-size: rem-calc(20);
 $h5-font-size: rem-calc(18);
 // $h6-font-size: 1rem;
 
@@ -1386,8 +1385,11 @@ $input-font-size: rem-calc(17);
 // $include-html-top-bar-classes: $include-html-classes;
 
 // Background color for the top bar
-$topbar-bg-color: rgba(1, 62, 125, 0);
-$topbar-bg: $primary-color;
+$topbar-bg-color: transparent;
+$topbar-bg: $topbar-bg-color;
+$topbar-secondary-color: $primary-color;
+$topbar-secondary-color-hover: darken($topbar-secondary-color, 10);
+$topbar-tertiary-color: $primary-color;
 
 // Height and margin
 $topbar-height: 67px;
@@ -1395,36 +1397,36 @@ $topbar-height: 67px;
 
 // Controlling the styles for the title in the top bar
 // $topbar-title-weight: $font-weight-normal;
-$topbar-title-font-size: rem-calc(18);
+// $topbar-title-font-size: rem-calc(17);
 
 // Style the top bar dropdown elements
-$topbar-dropdown-bg: $topbar-bg-color;
-// $topbar-dropdown-link-color: $white;
-$topbar-dropdown-link-bg: rgba(1, 62, 125, 0);
-$topbar-dropdown-link-bg-hover: darken($topbar-bg-color, 10%);
+$topbar-dropdown-bg: $topbar-secondary-color-hover;
+$topbar-dropdown-link-color: #fff;
+$topbar-dropdown-link-bg: $topbar-secondary-color-hover;
+$topbar-dropdown-link-bg-hover: $topbar-secondary-color;
 // $topbar-dropdown-link-weight: $font-weight-normal;
 // $topbar-dropdown-toggle-size: 5px;
-$topbar-dropdown-toggle-color: $white;
+// $topbar-dropdown-toggle-color: $white;
 // $topbar-dropdown-toggle-alpha: 0.4;
 
 // Set the link colors and styles for top-level nav
-// $topbar-link-color: $white;
+$topbar-link-color: $white;
 // $topbar-link-color-hover: $white;
 // $topbar-link-color-active: $white;
 // $topbar-link-color-active-hover: $white;
 // $topbar-link-weight: $font-weight-normal;
-// $topbar-link-font-size: rem-calc(13);
+$topbar-link-font-size: 15px;
 // $topbar-link-hover-lightness: -10%; // Darken by 10%
-$topbar-link-bg: rgba(1, 62, 125, 0);
-// $topbar-link-bg-color-hover: $charcoal;
-$topbar-link-bg-hover:darken($topbar-bg-color, 10%);
-$topbar-link-bg-active: $primary-color;
-// $topbar-link-bg-active-hover: scale-color($primary-color, $lightness: -14%);
+$topbar-link-bg: $topbar-bg;
+$topbar-link-bg-color-hover: $topbar-dropdown-link-bg;
+$topbar-link-bg-hover: $topbar-secondary-color-hover;
+$topbar-link-bg-active: $topbar-dropdown-link-bg;
+$topbar-link-bg-active-hover: $topbar-dropdown-link-bg-hover;
 $topbar-link-font-family: $header-font-family;
 $topbar-link-text-transform: uppercase;
-// $topbar-link-padding: ($topbar-height / 3);
+$topbar-link-padding: ($topbar-height / 4);
 // $topbar-back-link-size: $h5-font-size;
-// $topbar-link-dropdown-padding: 20px;
+$topbar-link-dropdown-padding: 15px;
 
 // $topbar-button-font-size: 0.75rem;
 // $topbar-button-top: 7px;
@@ -1437,17 +1439,17 @@ $topbar-link-text-transform: uppercase;
 
 // Top menu icon styles
 $topbar-menu-link-transform: uppercase;
-// $topbar-menu-link-font-size: rem-calc(13);
+$topbar-menu-link-font-size: rem-calc(16);
 // $topbar-menu-link-weight: $font-weight-bold;
-$topbar-menu-link-color: $white;
-$topbar-menu-icon-color: $white;
-$topbar-menu-link-color-toggled: $white;
-$topbar-menu-icon-color-toggled: $white;
+$topbar-menu-link-color: #fff;
+$topbar-menu-icon-color: #fff;
+$topbar-menu-link-color-toggled: #fff;
+$topbar-menu-icon-color-toggled: #fff;
 
 // Transitions and breakpoint styles
-$topbar-transition-speed: 300ms;
+// $topbar-transition-speed: 300ms;
 // Using rem-calc for the below breakpoint causes issues with top bar
-$topbar-breakpoint: #{lower-bound($medium-range)}; // Change to 9999px for always mobile layout
+// $topbar-breakpoint: #{lower-bound($medium-range)}; // Change to 9999px for always mobile layout
 $topbar-media-query: 'only screen and (min-width: #{upper-bound($medium-range)})';
 
 // Divider Styles
@@ -1455,7 +1457,7 @@ $topbar-media-query: 'only screen and (min-width: #{upper-bound($medium-range)})
 // $topbar-divider-border-top: solid 1px scale-color($topbar-bg-color, $lightness: -50%);
 
 // Sticky Class
-$topbar-sticky-class: ".sticky";
+// $topbar-sticky-class: ".sticky";
 $topbar-arrows: false; //Set false to remove the triangle icon from the menu item
 
 // 36. Visibility Classes

@@ -7,13 +7,12 @@
 <section class="testimonial">
   <div class="row">
     <div class="testimonial-content">
-      <h2>What our clients say about us:</h2>
       <div class="testimonial-slider">
         <div class="testimonial-item">
-          <span class="quote-before">“</span>First Testimonial Here...<span class="quote-after">”</span><br/><span class="testimonial-credit">&#8212; Testimonial Provider</a>
+          <span class="quote-before">“</span>First Testimonial Here...<span class="quote-after">”</span><br/><span class="testimonial-credit">&#8212; Testimonial Provider</span>
         </div>
         <div class="testimonial-item">
-          <span class="quote-before">“</span>Second Testimonial Here...<span class="quote-after">”</span><br/><span class="testimonial-credit">&#8212; Testimonial Provider</a>
+          <span class="quote-before">“</span>Second Testimonial Here...<span class="quote-after">”</span><br/><span class="testimonial-credit">&#8212; Testimonial Provider</span>
         </div>
       </div>
     </div>

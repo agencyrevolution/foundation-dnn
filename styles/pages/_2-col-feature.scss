@@ -5,18 +5,46 @@
     background-color: $primary-color;
     background-position: center center;
     background-size: cover;
-    padding: rem-calc(76) 0;
     text-shadow: rgb(0,0,0) 1px 1px 0px;
-    h2 {
-    	font-size: rem-calc(44);
+    .row {
+      @extend .common-padding;
+      position: relative;
+      @media #{$small-only} {
+        min-height: $feature-height-sm; //see base.scss
+      }
+      @media #{$medium-only} {
+        min-height: $feature-height-md; //see base.scss
+      }
+      @media #{$large-only} {
+        min-height: $feature-height-lg; //see base.scss
+      }
+      @media #{$xlarge-up} {
+        min-height: $feature-height-xl; //see base.scss
+      }
     }
-    .feature-wrap-color {
-			background-image: linear-gradient(45deg,rgba(0,0,0,.75) 20%, rgba(0,0,0,.1) 100%,transparent);
-			position: absolute;
-			top: 0;
-			right: 0;
-			bottom: 0;
-			left: 0;
-		}
+    h2 {
+    	font-size: $h1-font-size;
+    }
+    p {
+      font-size: rem-calc(20);
+      line-height: 1.4;
+    }
+  }
+  .feature {
+    @extend .small-12;
+    @extend .columns;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .feature-wrap-color {
+    background-image: linear-gradient(45deg,rgba(0,0,0,.75) 20%, rgba(0,0,0,.1) 100%,transparent);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
   }
 }
+

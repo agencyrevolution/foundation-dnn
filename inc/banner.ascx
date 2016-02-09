@@ -13,30 +13,41 @@
 
 <ar:Init runat='server'/>
 <dnn:DnnCssInclude runat="server" FilePath="dist/css/skin.min.css" PathNameAlias="SkinPath" ForceProvider="DnnPageHeaderProvider" Priority="6" />
-<dnn:DnnCssInclude runat="server" FilePath="inc/plugins/font-awesome/css/font-awesome.min.css" PathNameAlias="SkinPath" ForceProvider="DnnPageHeaderProvider" Priority="10" />
+
+<dnn:DnnCssInclude runat="server" FilePath="/Portals/kshergill/Skins/PrimeInsurance-elevate/inc/plugins/font-awesome/css/font-awesome.min.css" ForceProvider="DnnPageHeaderProvider" Priority="10" />
+
+<link href="https://fonts.googleapis.com/css?family=Oswald:300,400" media="all" type="text/css" property="stylesheet" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" media="all" type="text/css" property="stylesheet" rel="stylesheet"/>
+
 <dnn:DnnJsInclude runat="server" FilePath="dist/js/skin.min.js" PathNameAlias="SkinPath" ForceProvider="DnnFormBottomProvider" Priority="4" />
 
 <header role="banner">
-  <div class="header-top row">
-    <dnn:LOGO runat="server" />
-    <div class="primary-phone">
-      <p>Call Us: <a class="header-phone" href="tel:<avt:MyTokens runat="server" Token="[RevTemplate:Standard.LocalNumber]" />"><avt:MyTokens runat="server" Token="[RevTemplate:Standard.LocalNumber]" /></a></p>
+  <div class="header-top row full-width" data-equalizer>
+    <div class="brand" data-equalizer-watch>
+      <dnn:LOGO runat="server" />
+    </div> 
+    <div class="primary-phone" data-equalizer-watch>
+      <div class="primary-phone-content">
+         Call Us: 
+         <span><avt:MyTokens runat="server" Token="[RevTemplate:Standard.LocalNumber]" /></span>
+      </div>
     </div>
   </div>
   <div class="row nav-wrap full-width">
-    <div class="left-col left">
+    <div class="left-col">
       <div class="header-wrap">
         <fnn:TopBar runat="server"
         LeftNode="*,0,2"
         LeftExcludes="Home,Admin,Revolution"
-        Hover="false"
+        Hover="true"
         />
       </div>
-  </div>
-  <div class="connect-icons show-for-small-only right">
-    <a href="/contact-us"><i class="fa fa-map-marker"></i></a><a href="mailto:#"><i class="fa fa-envelope"></i></a><a href="tel:4032708822"><i class="fa fa-phone"></i></a>
-  </div>
-  <div class="right-col right">
-   <h4><a href="/contact-us"><i class="fa fa-map-marker"></i>Location & Hours </a><a href="mailto:#"><i class="fa fa-envelope"></i>Email Us</a></h4>
+    </div>
+    <div class="right-col show-for-medium-up">
+     <a href="/contact-us"><i class="fa fa-map-marker"></i>Location & Hours </a><a href="mailto:info@primeinsurance.ca"><i class="fa fa-envelope"></i>Email Us</a>
+    </div>
+    <div class="right-col connect-icons show-for-small-only">
+      <a href="/contact-us"><i class="fa fa-map-marker"></i></a><a href="mailto:info@primeinsurance.ca"><i class="fa fa-envelope"></i></a><a href="tel:<avt:MyTokens runat="server" Token="[RevTemplate:Standard.LocalNumber]" />"><i class="fa fa-phone"></i></a>
+    </div>
   </div>
 </header>
