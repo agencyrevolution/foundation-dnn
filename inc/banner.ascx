@@ -14,7 +14,7 @@
 <ar:Init runat='server'/>
 <dnn:DnnCssInclude runat="server" FilePath="dist/css/skin.min.css" PathNameAlias="SkinPath" ForceProvider="DnnPageHeaderProvider" Priority="6" />
 
-<dnn:DnnCssInclude runat="server" FilePath="/Portals/kshergill/Skins/PrimeInsurance-elevate/inc/plugins/font-awesome/css/font-awesome.min.css" ForceProvider="DnnPageHeaderProvider" Priority="10" />
+<dnn:DnnCssInclude runat="server" FilePath="[skinpath]/inc/plugins/font-awesome/css/font-awesome.min.css" ForceProvider="DnnPageHeaderProvider" Priority="10" />
 
 <link href="https://fonts.googleapis.com/css?family=Oswald:300,400" media="all" type="text/css" property="stylesheet" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" media="all" type="text/css" property="stylesheet" rel="stylesheet"/>

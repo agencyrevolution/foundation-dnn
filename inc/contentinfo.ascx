@@ -27,11 +27,9 @@
     <div class="footer-connected">
       <h4>Stay connected</h4>
       <a href="/blog">Read Our Blog</a><br>
-      <a href="https://www.facebook.com/PrimeInsuranceCentre" target="_blank"><i class="fa fa-facebook"></i></a> 
-      <a href="https://www.linkedin.com/company/prime-insurance-centre-ltd?trk=tyah&trkInfo=clickedVertical%3Acompany%2Cidx%3A1-1-1%2CtarId%3A1429810812955%2Ctas%3Aprime+insurance+centre" target="_blank"><i class="fa fa-linkedin"></i></a>
-      <a href="http://www.yelp.com/biz/prime-insurance-centre-ltd-surrey" target="_blank"><i class="fa fa-yelp"></i></a>
-      <a href="https://www.youtube.com/watch?v=Cx7ien4Pr7I" target="_blank"><i class="fa fa-youtube-play"></i></a>
-      <a href="https://www.pinterest.com/primeinsurancec/" target="_blank"><i class="fa fa-pinterest-p"></i></a>
+      <a href="#" target="_blank"><i class="fa fa-facebook"></i></a> 
+      <a href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
+      <a href="#" target="_blank"><i class="fa fa-yelp"></i></a>
     </div>
     <div class="footer-office"> 
       <div class="office-left">
@@ -63,14 +61,7 @@
       </div>
       <div class="office-right">
         <h4>Hours</h4>
-        <p>Monday - Friday<br>
-          8:30am - 9:00pm
-          <br><br>
-          Saturday<br>
-          8:30am - 6:30pm
-          <br><br>  
-          Sunday & Statutory Holidays<br>
-          10:00am - 5:30pm
+        <p>[Hours]
         </p>
       </div>
     </div>
